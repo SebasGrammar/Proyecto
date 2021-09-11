@@ -3,15 +3,15 @@
 *Mision TIC 2022 - UdeA*
 
 Desarrollado por:
-* Sebastian Palacio
-* Laura Zambrano
-* Juan Camilo Aristizabal
-* Diego Rodriguez
-* Wilmar Mora
+* [Sebastian Palacio](https://github.com/SebasGrammar/Proyecto#sebastian-palacio)
+* [Laura Zambrano](https://github.com/SebasGrammar/Proyecto#laura-zambrano)
+* [Juan Camilo Aristizabal](https://github.com/SebasGrammar/Proyecto#juan-camilo-aristizabal)
+* [Diego Rodriguez](https://github.com/SebasGrammar/Proyecto#diego-rodriguez)
+* [Wilmar Mora](https://github.com/SebasGrammar/Proyecto#wilmar-mora)
 
 ### Contenido
-- Presentación del equipo
-- Evidencias del Sprint 1
+- [Presentación del equipo](https://github.com/SebasGrammar/Proyecto#presentaci%C3%B3n-del-equipo)
+- [Evidencias del Sprint 1](https://github.com/SebasGrammar/Proyecto#Evidencias-del-Sprint-1)
 
 ### Presentación del equipo
 #### Sebastian Palacio
@@ -29,5 +29,7 @@ Rol en el equipo: Administrador de BD
 #### Wilmar Mora
 
 Rol en el equipo: Scrum Master
+
+### Evidencias del Sprint 1
 
 
