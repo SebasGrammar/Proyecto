@@ -21,6 +21,8 @@ Rol en el equipo: Desarrollador
 
 Rol en el equipo: Analista
 #### Juan Camilo Aristizabal
+Ingeniero Multimedia. Apasionado por el desarrollo web FrontEnd. Me gusta hacer deporte, jugar videojuegos
+y salir con amigos.
 
 Rol en el equipo: Product Owner
 #### Diego Rodriguez
