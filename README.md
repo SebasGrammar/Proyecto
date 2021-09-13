@@ -18,7 +18,7 @@ Desarrollado por:
 
 Rol en el equipo: Desarrollador
 #### Laura Zambrano
-Ingenieria Industrial con maestria en Industria 4.0. Me apasionan las nuevas tecnologías con especial énfasis en la Inteligencia Artificial y la Ciencia de Datos.
+Ingenieria Industrial con maestría en Industria 4.0. Me apasionan las nuevas tecnologías, en especial la Inteligencia Artificial y la Ciencia de Datos.
 
 Rol en el equipo: Analista
 #### Juan Camilo Aristizabal
