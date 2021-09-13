@@ -15,6 +15,7 @@ Desarrollado por:
 
 ### Presentación del equipo
 #### Sebastian Palacio
+Traductor. Apasionado por la física y la tecnología. Sigo de cerca el avance de la tecnología blockchain y la inteligencia artificial. Me gustan los videojuegos.
 
 Rol en el equipo: Desarrollador
 #### Laura Zambrano
