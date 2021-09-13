@@ -29,6 +29,7 @@ Rol en el equipo: Product Owner
 
 Rol en el equipo: Administrador de BD
 #### Wilmar Mora
+Abogado. Autodidacta, enamorado de los idiomas. 
 
 Rol en el equipo: Scrum Master
 
