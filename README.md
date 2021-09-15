@@ -36,6 +36,11 @@ Abogado. Autodidacta, enamorado de los idiomas.
 Rol en el equipo: Scrum Master
 
 ### Evidencias del Sprint 1
+En el primer Sprint se realizaron diferentes actividades como:
+- Crear un repositorio en GitHub.
+- Otorgar los permisos necesarios para todos los miembros.
+- Asignar los roles y responsabilidades dentro del equipo.
+- Crear un Plan de Trabajo en Trello
 [![Trello Sprint 1](/imagenes/trelloSemana1.PNG)](https://trello.com/b/cntmPM2a/sprint-1)
 
 
