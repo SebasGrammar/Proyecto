@@ -47,7 +47,8 @@ En el primer Sprint se realizaron diferentes actividades como:
 - Crear un Plan de Trabajo en Trello
 
 [![Trello Sprint 1](/imagenes/trelloSemana1.PNG)](https://trello.com/b/cntmPM2a/sprint-1)
+[![Trello Sprint 2](/imagenes/trelloSem2.PNG)](https://trello.com/b/cntmPM2a)
 
 Tambien se definió que la empresa sobre la que se desea trabajar se va a dedicar a la comercialización de partes tecnológicas.
 
-
+Ademas se empezó con el desarrollo de interfaces de usuario en Figma (front-end). Y se creó un proyecto en React para iniciar con el back-end.
