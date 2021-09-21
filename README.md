@@ -31,7 +31,7 @@ y salir con amigos.
 Rol en el equipo: Product Owner
 
 #### Diego Rodriguez
-
+filosofo , Convencido  de que la  automatizacion cambiara al mundo 
 Rol en el equipo: Administrador de BD
 
 #### Wilmar Mora
