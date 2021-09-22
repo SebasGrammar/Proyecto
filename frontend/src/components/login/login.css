@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --colorPrimario: #fffFFF;
     --colorSecundario: #F1F3F4;
+    --colorTerciario: #C4C4C4;
     --colorFont1: #3C4042;
     --colorFont2: #666A6E;
     --colorRojo:#D93025;
@@ -21,13 +22,12 @@
 
 .iniciar{    
     padding: 0px;
-    margin: 0px;
-    
+    margin: 0px;    
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.375rem; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; 
     padding: 1px;
     margin: 0px;
     color: var(--colorFont1);
@@ -35,8 +35,48 @@ h1 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.625rem;     
     color: var(--colorFont2);
     text-align: center;
+}
+
+.entryText{
+    border: 1px solid var(--colorTerciario);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.625rem;
+    padding: 0.45rem; 
+}
+
+.l-img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.botonPrincipal{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--colorRojo);
+    border: none;
+    color:  var(--colorPrimario);
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.625rem;
+    border-radius: 5px;
+    position: absolute;
+}
+.botonSecundario{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--colorPrimario);
+    border: none;
+    color: var(--colorRojo);
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.625rem;
+    border-radius: 5px;
 }
