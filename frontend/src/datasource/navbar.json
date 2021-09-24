@@ -1,0 +1,33 @@
+[
+    {
+        "admin": [
+            "inicio",
+            "ventas",
+            "vendedores",
+            "usuarios"
+        ]
+    },
+    {
+        "vendedores": [
+            "inicio",
+            "ventas"
+        ]
+    },
+    {
+        "ejecutivo": [
+            "inicio"
+        ]
+    },
+    {
+        "gerente comercial": [
+            "inicio",
+            "ventas",
+            "vendedores"
+        ]
+    },
+    {
+        "operario": [
+            "ventas"
+        ]
+    }
+]
