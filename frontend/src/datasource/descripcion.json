@@ -4,8 +4,7 @@
         "cuerpo": "En la Gestión de ventas se pueden ingresar o registrar los pedidos realizados por los clientes. Tambien establecer el estados de una venta (creada, embalaje, despacho, en ruta, ubicación, recepción).  Adicionalmente se consultar todas las ventas realizadas, asi como modificarlas o eliminarlas."
     },
     {
-        "titulo": "Gestión de vendedores",
-        "cuerpo": "En la Gestión de vendedores se pueden ingresar la información básica de los vendedores que participan en el negocio. Adicionalmente se consultar todos los vendedores del equipo X-Force, asi como modificar sus datos o eliminarlos"
+        "Gestión de vendedores": "En la Gestión de vendedores se pueden ingresar la información básica de los vendedores que participan en el negocio. Adicionalmente se consultar todos los vendedores del equipo X-Force, asi como modificar sus datos o eliminarlos"
     },    
     {
         "titulo": "Gestión de Usuarios y Roles",

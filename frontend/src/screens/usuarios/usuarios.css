@@ -1,0 +1,4 @@
+@import "../../colors.css";
+.pantalla{
+    background:var(--colorSecundario);
+}
