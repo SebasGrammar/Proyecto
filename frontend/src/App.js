@@ -12,9 +12,6 @@ function App() {
 
   return (
     <Router>
-      <h1>
-        un titulo x
-      </h1>
       {loggedIn && <Navbar />}
       <Route path="/login" component={Login} />
       <Route path="/" component={Navbar} exact />
