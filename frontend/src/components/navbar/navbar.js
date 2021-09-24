@@ -4,12 +4,10 @@ import './navbar.css';
 const createNav = (object) =>{
 
     const columns = []
-
     for(let property in object){
         columns.push(<li>{object[property]}</li>)
     }
     return(
-
         <ul>
             {columns}
         </ul>
@@ -17,27 +15,18 @@ const createNav = (object) =>{
 
 }
 
-export default function Navbar({headers, data }) {
-
-
+export default function Navbar({headers }) {
     return (
         <>
-
-        <ul>
-
+            <ul>
                 
-            {
-            headers.map(header => {
-                return(
-                    <li>{header}</li>
-
-                )
-            })
-            }
-
-        
-        </ul>
-
+                {
+                    headers.map(header => {
+                        return(
+                            <li>{header}</li>
+                        )
+                    })
+                }        
+            </ul>
         </>
-
     )}

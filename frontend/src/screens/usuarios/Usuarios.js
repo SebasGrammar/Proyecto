@@ -9,13 +9,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Usuarios() {
+    let arreglo = Object.values(descripcion[2])
     return (
-        <div className="pantalla">
-            <Header />
-                        
-            <Descripcion titulo={Object.keys(descripcion[1])} cuerpo={Object.values(descripcion[1])} />
+        <div className="pantalla">                                    
+            <Descripcion titulo={arreglo[0]} cuerpo={arreglo[1]} />
         </div>
     );
 }
-
 export default Usuarios;

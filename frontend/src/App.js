@@ -16,7 +16,7 @@ function App() {
     <Router>
       {loggedIn && <Navbar />}
       <Route path="/login" component={Login} />
-      <Route path="/" component={Header} exact />
+      <Route path="/usuarios" component={Header} exact />
       <Route path="/usuarios" component={Usuarios} />
     </Router>
   );

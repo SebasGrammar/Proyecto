@@ -1,6 +1,7 @@
 [
     {
-        "admin": [
+        "rol":"admin",
+        "pestañas": [
             "inicio",
             "ventas",
             "vendedores",
