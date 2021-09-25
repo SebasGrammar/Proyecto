@@ -1,0 +1,87 @@
+@import "../../colors.css";
+
+.main { 
+    background-color: var(--colorPrimario);
+    padding: 20px;
+    margin-inline: auto;
+    border: solid 2px;
+    border-color: var(--colorSecundario);
+    border-radius: 28px;
+    max-width: 20rem;
+    margin-top: 3rem;
+    
+}
+
+.iniciar{    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; 
+    padding: 1px;
+    margin: 0px;
+    color: var(--colorFont1);
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.625rem;     
+    color: var(--colorFont2);
+    text-align: center;
+}
+
+.entryText{
+    border: 1px solid var(--colorTerciario);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.625rem;
+    height: 1.7rem;
+    margin: 0.2rem;
+    width: 100%;
+}
+
+.l-img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.botonPrincipal{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--colorRojo);
+    border: none;
+    color: var(--colorPrimario);
+    width: 37%;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    height: 1.5rem;
+    font-size: 0.625rem;
+    margin: 0.5rem;
+}
+
+.botonSecundario{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--colorPrimario);
+    border: none;
+    color: var(--colorRojo);
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.625rem;
+    border-radius: 5px;
+}
+.resgistrarse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid grey;
+}
+.paragraph-p{
+    margin: 0;
+}
