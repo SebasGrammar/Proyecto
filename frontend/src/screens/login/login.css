@@ -3,17 +3,19 @@
 .main { 
     background-color: var(--colorPrimario);
     padding: 20px;
-    margin: 5em; 
-    /*width: 579px;
-    height: 757px;*/
+    margin-inline: auto;
     border: solid 2px;
     border-color: var(--colorSecundario);
     border-radius: 28px;
+    max-width: 20rem;
+    margin-top: 3rem;
+    
 }
 
 .iniciar{    
-    padding: 0px;
-    margin: 0px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 h1 {
@@ -38,7 +40,9 @@ p {
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 0.625rem;
-    padding: 0.45rem; 
+    height: 1.7rem;
+    margin: 0.2rem;
+    width: 100%;
 }
 
 .l-img{
@@ -50,15 +54,18 @@ p {
     font-family: 'Roboto', sans-serif;
     background-color: var(--colorRojo);
     border: none;
-    color:  var(--colorPrimario);
-    padding: 5px 12px;
+    color: var(--colorPrimario);
+    width: 37%;
+    border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    height: 1.5rem;
     font-size: 0.625rem;
-    border-radius: 5px;
-    position: absolute;
+    margin: 0.5rem;
+   
+
 }
+
 .botonSecundario{
     font-family: 'Roboto', sans-serif;
     background-color: var(--colorPrimario);
@@ -70,4 +77,13 @@ p {
     display: inline-block;
     font-size: 0.625rem;
     border-radius: 5px;
+}
+.resgistrarse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid grey;
+}
+.paragraph-p{
+    margin: 0;
 }

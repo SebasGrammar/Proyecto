@@ -1,9 +1,8 @@
-import React from 'react';
+
 import './login.css';
 import deadpool from '../../img/deadpool-icon.png';
 
-class Login extends React.Component {
-    render() {
+export default function Login (){
         return (
             <section className="main">
                 <section className="iniciar">
@@ -13,16 +12,18 @@ class Login extends React.Component {
                     <form action="">
                         <input className="entryText" type="text" id="username" name="username " placeholder="Usuario" /> <br></br>
                         <input className="entryText" type="text" id="password" name="password" placeholder="Contraseña" /> <br></br>
-                        <input className="botonPrincipal" type="submit" value="Iniciar sesión" />
                     </form>
+                   
+                    <input className="botonPrincipal" type="submit" value="Iniciar sesión" />
                     <p>¿Olvidaste tu contraseña?</p>
+                    
+              
                 </section>
                 <section className="resgistrarse">
-                    <p>¿No tienes una cuenta? </p>
+                    <p className="paragraph-p">¿No tienes una cuenta? </p>
                     <button className="botonSecundario" type="button">Regístrate </button>
                 </section>
             </section>
         )
     }
-}
-export default Login;
+
