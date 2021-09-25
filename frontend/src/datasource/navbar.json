@@ -9,25 +9,29 @@
         ]
     },
     {
-        "vendedores": [
+        "rol": "vendedores", 
+        "pestañas":[
             "inicio",
             "ventas"
         ]
     },
     {
-        "ejecutivo": [
+        "rol":"ejecutivo",
+        "pestañas": [
             "inicio"
         ]
     },
     {
-        "gerente comercial": [
+        "rol":"gerente comercial",
+        "pestañas": [
             "inicio",
             "ventas",
             "vendedores"
         ]
     },
     {
-        "operario": [
+        "rol":"operario",
+        "pestañas": [
             "ventas"
         ]
     }

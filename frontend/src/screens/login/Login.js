@@ -13,11 +13,10 @@ export default function Login (){
                         <input className="entryText" type="text" id="username" name="username " placeholder="Usuario" /> <br></br>
                         <input className="entryText" type="text" id="password" name="password" placeholder="Contraseña" /> <br></br>
                     </form>
-                   
+                    
                     <input className="botonPrincipal" type="submit" value="Iniciar sesión" />
                     <p>¿Olvidaste tu contraseña?</p>
                     
-              
                 </section>
                 <section className="resgistrarse">
                     <p className="paragraph-p">¿No tienes una cuenta? </p>
