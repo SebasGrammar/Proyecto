@@ -1,9 +1,9 @@
 import './usuarios.css';
-/*
 import Navbar from '../../components/navbar/Navbar';
-import Header from '../../components/header/Header';¨*/
+import Header from '../../components/header/Header';
 import Descripcion from '../../components/descripcion/Descripcion';
 import descripcion from '../../datasource/descripcion.json'
+import navbar from '../../datasource/navbar.json'
 
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,9 +22,13 @@ function Usuarios() {
 
     // we can use destructuring here, too:
     let [titulo, cuerpo] = Object.values(descripcion[2])
+    let [rol, pestañas, route] = Object.values(navbar[0])
     return (
-        <div className="pantalla">                                 
+        <div className="pantalla">
+            
+            <Navbar headers={pestañas} route={route}/>
             <Descripcion titulo={titulo} cuerpo={cuerpo} />
+            
         </div>
     );
 }

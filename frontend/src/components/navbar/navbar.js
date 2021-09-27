@@ -1,6 +1,6 @@
 
 import './navbar.css';
-
+/*
 const createNav = (object) =>{
 
     const columns = []
@@ -14,16 +14,19 @@ const createNav = (object) =>{
     )
 
 }
+*/
 
-export default function Navbar({headers }) {
+export default function Navbar({headers}) {
     return (
         <>
-            <ul>
-                
+            <ul>                
                 {
                     headers.map(header => {
                         return(
-                            <li>{header}</li>
+                            <li>
+                                {//<a href= `/header`
+                                header}
+                            </li>
                         )
                     })
                 }        

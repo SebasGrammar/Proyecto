@@ -6,6 +6,12 @@
             "ventas",
             "vendedores",
             "usuarios"
+        ],
+        "route":[
+            "/inicio",
+            "/ventas",
+            "/vendedores",
+            "/usuarios"
         ]
     },
     {
