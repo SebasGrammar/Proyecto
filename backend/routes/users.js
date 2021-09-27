@@ -1,6 +1,7 @@
 const express = require("express")
-const { getUsers } = require("../controllers/users")
+const { getUsers, createUser } = require("../controllers/users")
 const router = express.Router()
+const { login } = require("../controllers/auth")
 
 // router.get("/", function (req, res) {
 //     // res.send("<h1>Hola. Bienvenidos a Express.</h1>")
@@ -62,6 +63,9 @@ router.post("/", (req, res) => {
         message: "El usuario ha sido creado con éxito."
     })
 })
+
+router.post("/login", login)
+router.post("/signup", createUser)
 
 router.put("/:id", (req, res) => {
     res.status(200).json({
