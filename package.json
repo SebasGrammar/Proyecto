@@ -1,7 +1,10 @@
 {
   "scripts": {
     "start": "node backend/server",
-    "dev": "nodemon backend/server --ignore client"
+    "dev": "nodemon backend/server --ignore client",
+    "server": "nodemon backend/server",
+    "client": "set PORT=3006 && npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -12,6 +15,7 @@
     "mongoose": "^6.0.7"
   },
   "devDependencies": {
+    "concurrently": "^6.2.2",
     "nodemon": "^2.0.13"
   }
 }

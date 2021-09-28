@@ -25,11 +25,14 @@ exports.login = asyncHandler(async (req, res, next) => {
         return next('Invalid credentials');
     }
 
-    sendTokenResponse(user, 200, res);
+    sendTokenResponse(user, 200, res); // this is what sends the data we used in Test. (result object)
 });
 
 // Get token from model, create cookie and send response
 const sendTokenResponse = (user, statusCode, res) => {
+
+    console.log("IS THIS RUNNING OR NOT?")
+
     // Create token
     const token = user.getSignedJwtToken();
 

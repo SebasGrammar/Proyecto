@@ -87,7 +87,7 @@ export default function LoginForm() {
 
             console.log("Logged in...")
 
-            // window.location.href = "/admin";
+            window.location.href = "/test";
         }
 
         console.log(result);
