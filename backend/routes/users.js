@@ -2,6 +2,7 @@ const express = require("express")
 const { getUsers, createUser } = require("../controllers/users")
 const router = express.Router()
 const { login } = require("../controllers/auth")
+const User = require("../models/User")
 
 // router.get("/", function (req, res) {
 //     // res.send("<h1>Hola. Bienvenidos a Express.</h1>")
@@ -52,9 +53,14 @@ const { login } = require("../controllers/auth")
 // the above can be simplified even more by doing:
 router.route("/").get(getUsers)
 
-router.get("/:id", (req, res) => {
+router.get("/:id", async (req, res) => {
+    // res.status(200).json({
+    //     users: ["Laura", "Juan", "Wilmar", "Diego", "Sebastian"]
+    // })
+    const user = await User.findById(req.params.id)
     res.status(200).json({
-        users: ["Laura", "Juan", "Wilmar", "Diego", "Sebastian"]
+        success: true,
+        user
     })
 })
 

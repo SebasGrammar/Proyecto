@@ -1,77 +1,44 @@
-// import { basePath, apiVersion } from "./config";
-// import { ACCESS_TOKEN, REFRESH_TOKEN } from "../utils/constants";
-// import jwtDecode from "jwt-decode";
-
-const basePath = "http://localhost:3000/api/"
-const apiVersion = "v1"
-const ACCESS_TOKEN = "accessToken"
-const REFRESH_TOKEN = "refreshToken"
-
-export function getAccessTokenApi() {
-    const accessToken = localStorage.getItem(ACCESS_TOKEN);
-
-    if (!accessToken || accessToken === "null") {
-        return null;
-    }
-
-    return willExpireToken(accessToken) ? null : accessToken;
-}
-
-export function getRefreshTokenApi() {
-    const refreshToken = localStorage.getItem(REFRESH_TOKEN);
-
-    if (!refreshToken || refreshToken === "null") {
-        return null;
-    }
-
-    return willExpireToken(refreshToken) ? null : refreshToken;
-}
-
-export function refreshAccessTokenApi(refreshToken) {
-    const url = `${basePath}/${apiVersion}/refresh-access-token`;
-    const bodyObj = {
-        refreshToken: refreshToken
-    };
-    const params = {
-        method: "POST",
-        body: JSON.stringify(bodyObj),
-        headers: {
-            "Content-Type": "application/json"
-        }
-    };
-
-    fetch(url, params)
-        .then(response => {
-            if (response.status !== 200) {
-                return null;
-            }
-            return response.json();
-        })
-        .then(result => {
-            if (!result) {
-                logout();
-            } else {
-                const { accessToken, refreshToken } = result;
-                localStorage.setItem(ACCESS_TOKEN, accessToken);
-                localStorage.setItem(REFRESH_TOKEN, refreshToken);
-            }
-        });
-}
-
-export function logout() {
-    localStorage.removeItem(ACCESS_TOKEN);
-    localStorage.removeItem(REFRESH_TOKEN);
-}
-
-// Don't forget to move this into the config file
-const JWT_SECRET = "j3jr9j3rh9200"
-const JWT_EXPIRE = "30d"
+// auth.js
+const jwt = require("../services/jwt");
+const moment = require("moment");
+const User = require("../models/User");
 
 function willExpireToken(token) {
-    const seconds = 60;
-    // const metaToken = jwtDecode(token);
-    const metaToken = jwt.verify(token, JWT_SECRET);
-    const { exp } = metaToken;
-    const now = (Date.now() + seconds) / 1000;
-    return now > exp;
+    const { exp } = jwt.decodedToken(token);
+    const currentDate = moment().unix();
+
+    if (currentDate > exp) {
+        return true;
+    }
+    return false;
 }
+
+function refreshAccessToken(req, res) {
+    const { refreshToken } = req.body;
+    const isTokenExpired = willExpireToken(refreshToken);
+
+    if (isTokenExpired) {
+        res.status(404).send({ message: "El refreshToken ha expirado" });
+    } else {
+        const { id } = jwt.decodedToken(refreshToken);
+
+        User.findOne({ _id: id }, (err, userStored) => {
+            if (err) {
+                res.status(500).send({ message: "Error del servidor." });
+            } else {
+                if (!userStored) {
+                    res.status(404).send({ message: "Usuario no encontrado." });
+                } else {
+                    res.status(200).send({
+                        accessToken: jwt.createAccessToken(userStored),
+                        refreshToken: refreshToken
+                    });
+                }
+            }
+        });
+    }
+}
+
+module.exports = {
+    refreshAccessToken
+};
