@@ -11,6 +11,7 @@ export const AuthContext = createContext();
 
 export default function AuthProvider(props) {
     const { children } = props;
+    console.log(children)
     const [user, setUser] = useState({
         user: null,
         isLoading: true
@@ -24,9 +25,11 @@ export default function AuthProvider(props) {
 }
 
 function checkUserLogin(setUser) {
+    console.log("Check user login...")
     const accessToken = getAccessTokenApi();
 
     if (!accessToken) {
+        console.log("*** THERE IS NO ACCESS TOKEN ****")
         const refreshToken = getRefreshTokenApi();
 
         if (!refreshToken) {

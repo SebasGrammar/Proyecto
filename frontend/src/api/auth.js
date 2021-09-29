@@ -12,6 +12,7 @@ export function getAccessTokenApi() {
     const accessToken = localStorage.getItem(ACCESS_TOKEN);
 
     if (!accessToken || accessToken === "null") {
+        console.log("No access token")
         return null;
     }
 

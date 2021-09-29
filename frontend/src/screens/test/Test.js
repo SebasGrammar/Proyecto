@@ -7,6 +7,7 @@ const ACCESS_TOKEN = "accessToken"
 const REFRESH_TOKEN = "refreshToken"
 
 function signInApi(data) {
+    console.log("Is singni jiapi even runing")
     const url = `${basePath}/${apiVersion}/users/login`;
     const params = {
         method: "POST",
@@ -31,6 +32,7 @@ function signInApi(data) {
 }
 
 export default function LoginForm() {
+    console.log("LoginForm. Running?")
     const [inputs, setInputs] = useState({
         email: "",
         password: ""
@@ -45,6 +47,7 @@ export default function LoginForm() {
 
     const login = async e => {
         e.preventDefault();
+        console.log("Ok. Login running...")
         const result = await signInApi(inputs);
         console.log(result)
         if (result.message) {

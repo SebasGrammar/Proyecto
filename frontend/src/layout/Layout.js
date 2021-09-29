@@ -42,14 +42,19 @@ export default function Layout(props) {
         }
     }, [user])
 
+
+    console.log("UFUIASOPAA")
+    console.log(user)
+
     if (!user && !isLoading) {
+        console.log("THERES NOS FUCKING USE")
         return (
             <>
                 <Route path="/logint" component={Test} />
                 <Redirect to="/logint" />
             </>
         );
-    }
+    } 
 
     if (loggedInUser && !isLoading) {
         console.log(loggedInUser)
