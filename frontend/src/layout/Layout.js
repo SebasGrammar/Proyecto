@@ -7,6 +7,8 @@ import jwtDecode from "jwt-decode"
 import jwt from "jsonwebtoken"
 
 
+import Navbar from "../components/navbar/navbar"
+
 export default function Layout(props) {
     const { routes } = props;
     const [loggedInUser, setLoggedInUser] = useState()
@@ -49,7 +51,8 @@ export default function Layout(props) {
                 return result
             }).then(result => {
                 // setLoggedInUser(result.data.user.name)
-                setLoggedInUser(result.data.user.name)
+                setLoggedInUser(result.data.user)
+
             })
         }
     }, [user])
@@ -63,10 +66,24 @@ export default function Layout(props) {
             </>
         );
     }
-    if (user && !isLoading) {
+
+
+
+    // if (user && !isLoading) {
+    //     console.log(loggedInUser)
+    //     return (
+    //         <div>
+    //             <h1>{"loggedInUser" || "not found"}</h1>
+    //         </div>
+    //     );
+    // }
+
+    if (loggedInUser && !isLoading) {
+        console.log(loggedInUser)
         return (
             <div>
-                <h1>{loggedInUser || "not found"}</h1>
+                <Navbar role={loggedInUser.role} />
+                <h1>{loggedInUser.name || "not found"}</h1>
             </div>
         );
     }

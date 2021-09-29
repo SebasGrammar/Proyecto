@@ -7,12 +7,14 @@ const JWT_SECRET = "j3jr9j3rh9200"
 const JWT_EXPIRE = "30d"
 
 exports.createAccessToken = function (user) {
+    console.log("this doesn't even run")
     const payload = {
         id: user._id,
         name: user.name,
         // lastname: user.lastname,
         email: user.email,
         role: user.role,
+        isAdmin: false,
         createToken: moment().unix(),
         exp: moment()
             .add(3, "hours")

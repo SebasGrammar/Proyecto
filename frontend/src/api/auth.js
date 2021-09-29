@@ -8,6 +8,7 @@ const ACCESS_TOKEN = "accessToken"
 const REFRESH_TOKEN = "refreshToken"
 
 export function getAccessTokenApi() {
+    console.log("I wonder if this runs...")
     const accessToken = localStorage.getItem(ACCESS_TOKEN);
 
     if (!accessToken || accessToken === "null") {
@@ -28,6 +29,7 @@ export function getRefreshTokenApi() {
 }
 
 export function refreshAccessTokenApi(refreshToken) {
+    console.log("refreshaccesstokenapi")
     const url = `${basePath}/${apiVersion}/refresh-access-token`;
     const bodyObj = {
         refreshToken: refreshToken
@@ -51,6 +53,7 @@ export function refreshAccessTokenApi(refreshToken) {
             if (!result) {
                 logout();
             } else {
+                console.log("WHAT?????")
                 const { accessToken, refreshToken } = result;
                 localStorage.setItem(ACCESS_TOKEN, accessToken);
                 localStorage.setItem(REFRESH_TOKEN, refreshToken);

@@ -14,6 +14,7 @@ function willExpireToken(token) {
 }
 
 function refreshAccessToken(req, res) {
+    console.log("This doesn't run... soo......")
     const { refreshToken } = req.body;
     const isTokenExpired = willExpireToken(refreshToken);
 
