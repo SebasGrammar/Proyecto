@@ -1,147 +1,65 @@
-import { useState, useEffect } from 'react'
-import { Route, Switch, Redirect } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
+import React, { useState, useEffect } from 'react'
 import axios from "axios"
+import { Route, Redirect } from "react-router-dom"
+import useAuth from "../hooks/useAuth"
+import Test from "../screens/test/Test"
+import jwtDecode from "jwt-decode"
+import jwt from "jsonwebtoken"
 
-// export default function Layout() {
-//     return (
-//         <div>
+import Navbar from "../components/navbar/navbar"
 
-//         </div>
-//     )
-// }
-
-// import React, { useState } from "react";
-// import { Route, Switch, Redirect } from "react-router-dom";
-// import { Layout } from "antd";
-// import useAuth from "../hooks/useAuth";
-// import MenuTop from "../components/Admin/MenuTop";
-// import MenuSider from "../components/Admin/MenuSider";
-// import AdminSignIn from "../pages/Admin/SignIn";
-
-// import "./LayoutAdmin.scss";
-
-async function getUser({ id }) {
-    // const user = await axios.get(`api/v1/users/${user.id}`)
-    // const user = await axios.get(`api/v1/users/${id}`)
-    return await axios.get(`api/v1/users/${id}`)
+let tabSelector = {
+    "user": [
+        <button className="o-button">Inicio</button>
+        , <button className="o-button">Ventas</button>
+    ],
+    "publisher": [
+        <button className="o-button">Inicio</button>
+        , <button className="o-button">Ventas</button>
+        , <button className="o-button">vendedores</button>
+        , <button className="o-button"><a href="/whatever">Usuarios y Roles</a></button>
+    ]
 }
 
 export default function Layout(props) {
-    // const { routes } = props;
-    // const [menuCollapsed, setMenuCollapsed] = useState(false);
-    let { user, isLoading } = useAuth(); // user is actually user id
-    let [us, setUs] = useState({
-
-    })
-    // console.log("Let's see if there's an user")
-    // console.log(user)
-
-    // axios.get(`api/v1/users/${user.id}`).then(result => {
-    //     console.log(result)
-    // })
-
-    // if (!isLoading) {
-    //     axios.get(`api/v1/users/${user.id}`).then(result => {
-    //         console.log(result)
-    //     })
-    // }
-
-    // if (!isLoading) {
-
-    //     const user2 = axios.get(`api/v1/users/${user.id}`).then(result => {
-    //         console.log(result.data)
-    //     })
-
-    // }
-
-    let loggedInUser;
+    const { routes } = props;
+    const [loggedInUser, setLoggedInUser] = useState()
+    const [menuCollapsed, setMenuCollapsed] = useState(false);
+    const { Header, Content, Footer } = Layout;
+    const { user, isLoading } = useAuth();
 
     useEffect(() => {
-
-        // axios.get(`api/v1/users/${user.id}`).then(result => {
-        //     console.log("INSIDE EFFET")
-        //     console.log(result)
-        // })
-
-        // console.log("JJJJTHIS IS NOT RUNIG")
-        // console.log(user)
-
-        const getUser = async () => {
-            const response = await axios.get(`api/v1/users/${user.id}`)
-            console.log(response.data.user.name)
-            return response.data.user
+        if (!isLoading) {
+            axios.get(`http://localhost:3000/api/v1/users/${user.id}`, {
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then(result => {
+                return result
+            }).then(result => {
+                setLoggedInUser(result.data.user)
+            })
         }
-
-        if (user) {
-            loggedInUser = getUser()
-            setUs(getUser())
-            console.log(user)
-        }
-
-
-        // console.log("ABOVE")
-
-
-
     }, [user])
-
-    console.log(us.name)
-    // console.log("OK")
-    // console.log(actualUser)
 
     if (!user && !isLoading) {
         return (
             <>
-                <Route path="/logint" />
+                <Route path="/logint" component={Test} exact />
                 <Redirect to="/logint" />
             </>
         );
-    }
+    } 
 
-    // console.log(loggedInUser)
-
-
-    if (user && !isLoading) {
+    if (loggedInUser && !isLoading) {
+        console.log(loggedInUser)
         return (
             <div>
-                <h1>{user.id}</h1>
-                <h1>{user.name || "nof fond"}</h1>
-                {/* <div
-                    className="layout-admin"
-                    style={{ marginLeft: menuCollapsed ? "80px" : "200px" }}
-                >
-                    <Header className="layout-admin__header">
-                        <MenuTop
-                            menuCollapsed={menuCollapsed}
-                            setMenuCollapsed={setMenuCollapsed}
-                        />
-                    </Header>
-                    <Content className="layout-admin__content">
-                        <LoadRoutes routes={routes} />
-                    </Content>
-                    <Footer className="layout-admin__footer">
-                        Agustin Navarro Galdon
-                    </Footer>
-                </div> */}
+                <Navbar role={loggedInUser.role} tabs={tabSelector[loggedInUser.role]} />
+                <h1>{loggedInUser.name || "not found"}</h1>
             </div>
         );
     }
 
     return null;
-}
-
-function LoadRoutes({ routes }) {
-    return (
-        <Switch>
-            {routes.map((route, index) => (
-                <Route
-                    key={index}
-                    path={route.path}
-                    exact={route.exact}
-                    component={route.component}
-                />
-            ))}
-        </Switch>
-    );
 }

@@ -5,9 +5,12 @@ import Navbar from './components/navbar/navbar';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import LoginForm from "./screens/test/Test"
-import AuthProvider from "./providers/AuthProvider"
 import Layout from "./layout/Layout"
+import LoginForm from "./screens/test/Test"
+import AuthProvider from './providers/AuthProvider';
+import Usuarios from './screens/usuarios/Usuarios';
+
+// The token's being set from LoginForm.
 
 function App() {
 
@@ -16,14 +19,16 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <h1>
+        {/* <h1>
           un titulo x
-        </h1>
+        </h1> */}
         {loggedIn && <Navbar />}
-        <Route path="/test" component={Layout} />
+        <Route path="/" component={Layout} />
         <Route path="/login" component={Login} />
-        <Route path="/logint" component={LoginForm} />
-        <Route path="/" component={Navbar} exact />
+        {/* <Route path="/logint" component={LoginForm} />  */}
+        {/* the route above shouldn't be enabled... it's supposed to be rendered from Test.js . FCK */}
+        {/* <Route path="/" component={Navbar} exact /> */}
+        <Route path="/whatever" component={Usuarios} />
       </Router>
     </AuthProvider>
   );

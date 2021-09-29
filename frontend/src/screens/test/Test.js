@@ -7,52 +7,32 @@ const ACCESS_TOKEN = "accessToken"
 const REFRESH_TOKEN = "refreshToken"
 
 function signInApi(data) {
-    // const url = `${basePath}/${apiVersion}/sign-in`;
-    // const url = `${basePath}/${apiVersion}/users/login`;
-    // const params = {
-    //     method: "POST",
-    //     body: JSON.stringify(data),
-    //     headers: {
-    //         "Content-Type": "application/json"
-    //     }
-    // };
+    console.log("Is singni jiapi even runing")
+    const url = `${basePath}/${apiVersion}/users/login`;
+    const params = {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    };
 
-    // return axios.post("api/v1/users/login", {
-    //     email: "coconut@hotmail.com",
-    //     password: "123456"
-    // }).then(response => {
-    //     return response
-    // }).then(result => {
-    //     console.log(result)
-    //     return result
-    // }).catch(err => {
-    //     return err.message
-    // })
+    return fetch(url, params)
+        .then(response => {
+            return response.json();
+        })
+        .then(result => {
+            console.log(result);
 
-    return axios.post("api/v1/users/login", data).then(response => {
-        return response
-    }).then(result => {
-        console.log(result)
-        return result
-    }).catch(err => {
-        return err.message
-    })
-
-    // return fetch(url, params)
-    //     .then(response => {
-    //         return response.json();
-    //     })
-    //     .then(result => {
-    //         console.log(result);
-
-    //         return result;
-    //     })
-    //     .catch(err => {
-    //         return err.message;
-    //     });
+            return result;
+        })
+        .catch(err => {
+            return err.message;
+        });
 }
 
 export default function LoginForm() {
+    console.log("LoginForm. Running?")
     const [inputs, setInputs] = useState({
         email: "",
         password: ""
@@ -67,6 +47,7 @@ export default function LoginForm() {
 
     const login = async e => {
         e.preventDefault();
+        console.log("Ok. Login running...")
         const result = await signInApi(inputs);
         console.log(result)
         if (result.message) {
@@ -75,10 +56,16 @@ export default function LoginForm() {
             // });
             console.log("You screwed up...")
         } else {
+            console.log(result)
             // const { accessToken, refreshToken } = result;
             // const { token: accessToken } = result;
-            const { token: accessToken } = result.data;
+
+
+            // const { token: accessToken } = result.data;
+            const { token: accessToken } = result;
             localStorage.setItem(ACCESS_TOKEN, accessToken);
+
+
             //localStorage.setItem(REFRESH_TOKEN, refreshToken);
 
             // notification["success"]({
@@ -87,7 +74,8 @@ export default function LoginForm() {
 
             console.log("Logged in...")
 
-            window.location.href = "/test";
+            // window.location.href = "/admin";
+            window.location.href = "/";
         }
 
         console.log(result);

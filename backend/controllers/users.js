@@ -1,9 +1,15 @@
 const asyncHandler = require("../middleware/asyncHandler")
 const User = require("../models/User")
 
-exports.getUsers = (req, res, next) => {
-    res.status(200).json({
-        users: ["Laura", "Juan", "Wilmar", "Diego", "Sebastian"]
+exports.getUsers = async (req, res, next) => {
+    // res.status(200).json({
+    //     users: ["Laura", "Juan", "Wilmar", "Diego", "Sebastian"]
+    // })
+
+    const users = await User.find()
+    res.status(201).json({
+        success: true,
+        data: users
     })
 }
 
