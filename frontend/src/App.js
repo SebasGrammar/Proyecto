@@ -23,7 +23,7 @@ function App() {
           un titulo x
         </h1> */}
         {loggedIn && <Navbar />}
-        <Route path="/" component={Layout} exact />
+        <Route path="/" component={Layout} />
         <Route path="/login" component={Login} />
         {/* <Route path="/logint" component={LoginForm} />  */}
         {/* the route above shouldn't be enabled... it's supposed to be rendered from Test.js . FCK */}

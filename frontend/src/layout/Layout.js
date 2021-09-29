@@ -17,7 +17,7 @@ let tabSelector = {
         <button className="o-button">Inicio</button>
         , <button className="o-button">Ventas</button>
         , <button className="o-button">vendedores</button>
-        , <button className="o-button">Usuarios y Roles</button>
+        , <button className="o-button"><a href="/whatever">Usuarios y Roles</a></button>
     ]
 }
 
@@ -42,15 +42,10 @@ export default function Layout(props) {
         }
     }, [user])
 
-
-    console.log("UFUIASOPAA")
-    console.log(user)
-
     if (!user && !isLoading) {
-        console.log("THERES NOS FUCKING USE")
         return (
             <>
-                <Route path="/logint" component={Test} />
+                <Route path="/logint" component={Test} exact />
                 <Redirect to="/logint" />
             </>
         );
