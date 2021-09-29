@@ -50,7 +50,9 @@ import logout from '../../img/pencil.png';
 //     }
 // }
 
-export default function navbar({role}) {
+// Rendering from Layout
+
+export default function navbar({ role, tabs }) {
     return (
 
         <section className="o-main-container">
@@ -80,11 +82,8 @@ export default function navbar({role}) {
             </section>
 
             <section className="o-down-navbar">
-                <nav className="navbar navbar-light bg-light justify-content-around ">
-                    <button className="o-button">Inicio</button>
-                    <button className="o-button">Ventas</button>
-                    <button className="o-button">vendedores</button>
-                    <button className="o-button">Usuarios y Roles</button>
+                <nav className="navbar navbar-light bg-light justify-content-around">
+                    {tabs}
                 </nav>
 
             </section>

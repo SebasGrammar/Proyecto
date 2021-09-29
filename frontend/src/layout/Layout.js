@@ -6,8 +6,20 @@ import Test from "../screens/test/Test"
 import jwtDecode from "jwt-decode"
 import jwt from "jsonwebtoken"
 
-
 import Navbar from "../components/navbar/navbar"
+
+let tabSelector = {
+    "user": [
+        <button className="o-button">Inicio</button>
+        , <button className="o-button">Ventas</button>
+    ],
+    "publisher": [
+        <button className="o-button">Inicio</button>
+        , <button className="o-button">Ventas</button>
+        , <button className="o-button">vendedores</button>
+        , <button className="o-button">Usuarios y Roles</button>
+    ]
+}
 
 export default function Layout(props) {
     const { routes } = props;
@@ -15,31 +27,6 @@ export default function Layout(props) {
     const [menuCollapsed, setMenuCollapsed] = useState(false);
     const { Header, Content, Footer } = Layout;
     const { user, isLoading } = useAuth();
-
-
-    // useEffect(() => {
-    //     axios.get(`api/users/${user.id}`, {
-    //         headers: {
-    //             "Content-Type": "application/json"
-    //         }
-    //     })
-    // }, [user])
-
-    // http://localhost:3000/api/v1/users/61522710a12e28c95c442fb6
-    // useEffect(() => {
-    //     if (!isLoading) {
-    //         axios.get(`http://localhost:3000/api/v1/users/${user.id}`, {
-    //             headers: {
-    //                 "Content-Type": "application/json"
-    //             }
-    //         }).then(result => {
-    //             return result
-    //         }).then(result => {
-    //             setLoggedInUser(result)
-    //         })
-
-    //     }
-    // }, [user])
 
     useEffect(() => {
         if (!isLoading) {
@@ -50,13 +37,10 @@ export default function Layout(props) {
             }).then(result => {
                 return result
             }).then(result => {
-                // setLoggedInUser(result.data.user.name)
                 setLoggedInUser(result.data.user)
-
             })
         }
     }, [user])
-
 
     if (!user && !isLoading) {
         return (
@@ -67,22 +51,11 @@ export default function Layout(props) {
         );
     }
 
-
-
-    // if (user && !isLoading) {
-    //     console.log(loggedInUser)
-    //     return (
-    //         <div>
-    //             <h1>{"loggedInUser" || "not found"}</h1>
-    //         </div>
-    //     );
-    // }
-
     if (loggedInUser && !isLoading) {
         console.log(loggedInUser)
         return (
             <div>
-                <Navbar role={loggedInUser.role} />
+                <Navbar role={loggedInUser.role} tabs={tabSelector[loggedInUser.role]} />
                 <h1>{loggedInUser.name || "not found"}</h1>
             </div>
         );
@@ -90,18 +63,3 @@ export default function Layout(props) {
 
     return null;
 }
-
-// function LoadRoutes({ routes }) {
-//     return (
-//         <Switch>
-//             {routes.map((route, index) => (
-//                 <Route
-//                     key={index}
-//                     path={route.path}
-//                     exact={route.exact}
-//                     component={route.component}
-//                 />
-//             ))}
-//         </Switch>
-//     );
-// }

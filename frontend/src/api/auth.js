@@ -1,5 +1,3 @@
-// import { basePath, apiVersion } from "./config";
-// import { ACCESS_TOKEN, REFRESH_TOKEN } from "../utils/constants";
 import jwtDecode from "jwt-decode";
 
 const basePath = "http://localhost:3000/api";
@@ -7,6 +5,8 @@ const apiVersion = "v1";
 const ACCESS_TOKEN = "accessToken"
 const REFRESH_TOKEN = "refreshToken"
 
+// 1) AuthProvider
+// Observations: when invalid credentials, token is undefined & the app crashes.
 export function getAccessTokenApi() {
     console.log("I wonder if this runs...")
     const accessToken = localStorage.getItem(ACCESS_TOKEN);
@@ -19,6 +19,7 @@ export function getAccessTokenApi() {
 }
 
 export function getRefreshTokenApi() {
+    console.log("Regresh otken")
     const refreshToken = localStorage.getItem(REFRESH_TOKEN);
 
     if (!refreshToken || refreshToken === "null") {

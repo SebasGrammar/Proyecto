@@ -2,7 +2,7 @@ const asyncHandler = require("../middleware/asyncHandler")
 const User = require("../models/User")
 
 exports.login = asyncHandler(async (req, res, next) => {
-    console.log("LOOOGGIIN IIIINNNNN.....")
+    console.log("1. ")
     const { email, password } = req.body;
 
     // Validate emil & password
@@ -11,7 +11,7 @@ exports.login = asyncHandler(async (req, res, next) => {
     }
 
     // Check for user
-    const user = await User.findOne({ email }).select('+password');
+    const user = await User.findOne({ email }).select('+password'); // retrieve password to be able to compare both the entered password and the one in the database
 
     if (!user) {
         // return next('Invalid credentials');

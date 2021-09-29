@@ -9,21 +9,18 @@ import Layout from "./layout/Layout"
 import LoginForm from "./screens/test/Test"
 import AuthProvider from './providers/AuthProvider';
 
-// import useAuth from "../hooks/useAuth"
-
 // The token's being set from LoginForm.
 
 function App() {
 
   const loggedIn = false
-  // const { user, isLoading } = useAuth();
 
   return (
     <AuthProvider>
       <Router>
-        <h1>
+        {/* <h1>
           un titulo x
-        </h1>
+        </h1> */}
         {loggedIn && <Navbar />}
         <Route path="/" component={Layout} />
         <Route path="/login" component={Login} />
