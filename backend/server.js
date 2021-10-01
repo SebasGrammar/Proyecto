@@ -8,7 +8,7 @@ const cors = require("cors")
 const users = require("./routes/users")
 const auth = require("./routes/auth")
 
-dotenv.config({ path: "./config/config.env" })
+dotenv.config() // initialize dotenv
 
 connectDB()
 
