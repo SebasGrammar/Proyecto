@@ -3,8 +3,7 @@
 .main { 
     background-color: var(--colorPrimario);
     padding: 20px;
-    margin: auto;
-    
+    margin-inline: auto;    
     border: solid 2px;
     border-color: var(--colorSecundario);
     border-radius: 28px;
@@ -42,7 +41,7 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 0.625rem;
     height: 1.7rem;
-    margin: auto;
+    margin: 0.2rem;
     width: 100%;
 }
 
