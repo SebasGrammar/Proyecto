@@ -21,7 +21,8 @@ exports.createAccessToken = function (user) {
             .unix()
     };
 
-    return jwt.encode(payload, JWT_SECRET);
+    // return jwt.encode(payload, JWT_SECRET);
+    return jwt.sign(payload, JWT_SECRET);
 };
 
 exports.createRefreshToken = function (user) {
@@ -32,9 +33,10 @@ exports.createRefreshToken = function (user) {
             .unix()
     };
 
-    return jwt.encode(payload, JWT_SECRET);
+    // return jwt.encode(payload, JWT_SECRET);
+    return jwt.sign(payload, JWT_SECRET);
 };
 
-exports.decodedToken = function (token) {
-    return jwt.decode(token, JWT_SECRET, true);
-};
+// exports.decodedToken = function (token) {
+//     return jwt.decode(token, JWT_SECRET, true);
+// };

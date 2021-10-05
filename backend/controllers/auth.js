@@ -1,5 +1,7 @@
 const asyncHandler = require("../middleware/asyncHandler")
-const User = require("../models/User")
+const moment = require("moment")
+const User = require("../models/User");
+const { createRefreshToken } = require("../services/jwt");
 
 exports.login = asyncHandler(async (req, res, next) => {
     console.log("1. ")
@@ -25,6 +27,7 @@ exports.login = asyncHandler(async (req, res, next) => {
         return next('Invalid credentials');
     }
 
+    // createRefreshToken() // create refresh token right when the user logs in // put this inside sendTokenResponse next
     sendTokenResponse(user, 200, res); // this is what sends the data we used in Test. (result object)
 });
 
@@ -36,6 +39,12 @@ const sendTokenResponse = (user, statusCode, res) => {
     // Create token
     const token = user.getSignedJwtToken();
 
+    // refresh token
+    // const refreshToken = createRefreshToken(user) || "no token"
+    const refreshToken = createRefreshToken(user)
+
+    // console.log(createRefreshToken(user))
+
     const options = {
         expires: new Date(
             Date.now() + process.env.JWT_COOKIE_EXPIRE * 24 * 60 * 60 * 1000,
@@ -43,8 +52,28 @@ const sendTokenResponse = (user, statusCode, res) => {
         httpOnly: true
     };
 
-    res.status(statusCode).cookie('token', token, options).json({
+
+    // res.status(statusCode).cookie('token', token, options).cookie("yes", "no").json({
+    //     success: true,
+    //     token,
+    //     yes: "no"
+    // });
+
+    res.status(statusCode).cookie('token', token, options).cookie("refreshToken", refreshToken).json({
         success: true,
-        token
+        token,
+        refreshToken
     });
+
 };
+
+// exports.createRefreshToken = function (user) {
+//     const payload = {
+//         id: user._id,
+//         exp: moment()
+//             .add(30, "days")
+//             .unix()
+//     };
+
+//     return jwt.encode(payload, SECRET_KEY);
+// };

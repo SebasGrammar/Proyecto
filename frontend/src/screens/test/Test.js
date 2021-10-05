@@ -56,26 +56,30 @@ export default function LoginForm() {
             // });
             console.log("You screwed up...")
         } else {
+            console.log("HOOLY SHIT")
             console.log(result)
             // const { accessToken, refreshToken } = result;
             // const { token: accessToken } = result;
 
 
             // const { token: accessToken } = result.data;
-            const { token: accessToken } = result;
-            localStorage.setItem(ACCESS_TOKEN, accessToken);
 
+            const { token: accessToken, refreshToken } = result;
+            if (accessToken) {
+                localStorage.setItem(ACCESS_TOKEN, accessToken);
+                localStorage.setItem("refreshToken", refreshToken)
 
-            //localStorage.setItem(REFRESH_TOKEN, refreshToken);
+                //localStorage.setItem(REFRESH_TOKEN, refreshToken);
 
-            // notification["success"]({
-            //     message: "Login correcto."
-            // });
+                // notification["success"]({
+                //     message: "Login correcto."
+                // });
 
-            console.log("Logged in...")
+                console.log("Logged in...")
 
-            // window.location.href = "/admin";
-            window.location.href = "/";
+                // window.location.href = "/admin";
+                window.location.href = "/";
+            }
         }
 
         console.log(result);
