@@ -10,14 +10,14 @@ import Navbar from "../components/navbar/navbar"
 
 let tabSelector = {
     "user": [
-        <button className="o-button">Inicio</button>
-        , <button className="o-button">Ventas</button>
+        <a href="/home">Inicio</a>
+        , <a href="/sell">Ventas</a>
     ],
     "publisher": [
-        <button className="o-button">Inicio</button>
-        , <button className="o-button">Ventas</button>
-        , <button className="o-button">vendedores</button>
-        , <button className="o-button"><a href="/whatever">Usuarios y Roles</a></button>
+        <a href="/home">Inicio</a>
+        , <a href="/sell">Ventas</a>
+        , <a href="/sellers">Vendedores</a>
+        , <a href="/users">Usuarios y Roles</a>
     ]
 }
 

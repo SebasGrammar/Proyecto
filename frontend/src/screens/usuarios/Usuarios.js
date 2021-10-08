@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios"
+import Table from '../../components/table/Table';
+import Description from '../../components/description/Description';
 
 export default function Usuarios() {
 
@@ -31,16 +33,27 @@ export default function Usuarios() {
     if (users) {
         console.log(users)
         return (
-            <div>
-                {users.map(user => (
-                    <h1>{user.name}</h1>
-                ))}
-            </div>
+         //   <div>
+             //   {users.map(user => (
+              //      <h1>{user.name}</h1>
+                //))}
+                // <h1>what its loading?</h1>
+           // </div>
             // <h1>Loaded already. </h1>
+            <div>
+           
+          <Description
+          titulo="Usuarios y roles"
+          descripcion="Esta es la prueba de la descripcion de los usuarios y roles"
+          textoBoton="Agregar vendedor"
+          />
+          </div>
         )
     } else {
         return (
+            <div>
             <h1>Loading...</h1>
+            </div>
         )
     }
 

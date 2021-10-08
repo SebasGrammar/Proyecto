@@ -9,6 +9,9 @@ import Layout from "./layout/Layout"
 import LoginForm from "./screens/test/Test"
 import AuthProvider from './providers/AuthProvider';
 import Usuarios from './screens/usuarios/Usuarios';
+import Vendedores from './screens/vendedores/Vendedores';
+import Ventas from './screens/ventas/Ventas';
+
 
 // The token's being set from LoginForm.
 
@@ -28,7 +31,7 @@ function App() {
         {/* <Route path="/logint" component={LoginForm} />  */}
         {/* the route above shouldn't be enabled... it's supposed to be rendered from Test.js . FCK */}
         {/* <Route path="/" component={Navbar} exact /> */}
-        <Route path="/whatever" component={Usuarios} />
+        <Route path="/users" component={Usuarios} />
       </Router>
     </AuthProvider>
   );
