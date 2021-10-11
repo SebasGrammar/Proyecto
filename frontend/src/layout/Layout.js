@@ -59,7 +59,9 @@ export default function Layout(props) {
         return (
             <div>
                 <Navbar role={loggedInUser.role} tabs={tabSelector[loggedInUser.role]} />
-                <h1>{loggedInUser.name || "not found"}</h1>
+                {/* <h1>{loggedInUser.name || "not found"}</h1> */}
+                {/* control +k+c comenta
+                control +k +u descomenta */}
             </div>
         );
     }

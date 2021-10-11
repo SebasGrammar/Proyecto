@@ -44,9 +44,9 @@ export default function Usuarios() {
             <div className="contenedor">
                 <Description
                     titulo="Gestión de Usuarios y Roles"
-                    descripcion="En la Gestión de Usuarios y Roles permite administrar los roles en el sistema (vendedor, administrador, ejecutivo, operario, director, gerente comercial) y restringir/otorgar los accesos al sistema.
+                    descripcion={`En la Gestión de Usuarios y Roles permite administrar los roles en el sistema (vendedor, administrador, ejecutivo, operario, director, gerente comercial) y restringir/otorgar los accesos al sistema.
                     
-                    Adicionalmente se consultar todos los usuarios de X-Force Team, asi como modificar sus datos o eliminarlos."
+                    Adicionalmente se consultar todos los usuarios de X-Force Team, asi como modificar sus datos o eliminarlos.`} 
                     textoBoton="Agregar usuario"
                 />
                 <Table title=""
