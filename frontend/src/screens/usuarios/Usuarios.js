@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import axios from "axios"
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
 import Table from '../../components/table/Table';
 import Description from '../../components/description/Description';
+import './Usuario.css';
 
 export default function Usuarios() {
 
@@ -40,17 +41,22 @@ export default function Usuarios() {
                 // <h1>what its loading?</h1>
            // </div>
             // <h1>Loaded already. </h1>
-            <div>
+            <div className="contenedor">
                 <Description
                     titulo="Gestión de Usuarios y Roles"
-                    descripcion="En la Gestión de Usuarios y Roles permite administrar los roles en el sistema (vendedor, administrador, ejecutivo, operario, director, gerente comercial) y restringir/otorgar los accesos al sistema. Adicionalmente se consultar todos los usuarios de X-Force Tea, asi como modificar sus datos o eliminarlos."
-                    textoBoton="Agregar vendedor"
+                    descripcion="En la Gestión de Usuarios y Roles permite administrar los roles en el sistema (vendedor, administrador, ejecutivo, operario, director, gerente comercial) y restringir/otorgar los accesos al sistema.
+                    
+                    Adicionalmente se consultar todos los usuarios de X-Force Team, asi como modificar sus datos o eliminarlos."
+                    textoBoton="Agregar usuario"
                 />
+                <Table title=""
+                    headers={["ID Usuario"]}
+                    data={["1250"]}/>
             </div>
         )
     } else {
         return (
-            <div>
+            <div className="contenedor">
             <h1>Loading...</h1>
             </div>
         )

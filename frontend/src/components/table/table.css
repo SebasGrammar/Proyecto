@@ -1,5 +1,21 @@
+@import "../../colors.css";
+
+.contenedorTabla{
+    background: var(--colorPrimario);
+
+    justify-content: space-evenly;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--colorSecundario); 
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
 .head {
-    background: lightblue
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;     
+    color: var(--colorFont2);
+    text-align: center;
 }
 
 .body {
