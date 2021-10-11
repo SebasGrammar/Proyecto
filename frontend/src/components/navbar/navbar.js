@@ -83,7 +83,7 @@ export default function navbar({ role, tabs }) {
             </section>
 
             <section className="o-down-navbar">
-                <nav className="navbar navbar-light bg-light justify-content-around">
+                <nav className="navbar navbar-light bg-light justify-content-around nav-link active">
                     {tabs}
                 </nav>
 

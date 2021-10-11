@@ -11,16 +11,18 @@ import Navbar from "../components/navbar/navbar"
 
 let tabSelector = {
     "user": [
-        <a className=".o-links" href="/home">Inicio</a>
-        , <a className=".o-links" href="/sell">Ventas</a>
+        <a className="o-links " href="/home">Inicio</a>
+        , <a className="o-links " href="/sell">Ventas</a>
     ],
     "publisher": [
-        <a  href="/home" className=".o-links">Inicio</a>
-        , <a  className=".o-links" href="/sell">Ventas</a>
-        , <a className=".o-links" href="/sellers">Vendedores</a>
-        , <a className=".o-links" href="/users">Usuarios y Roles</a>
+        <a role="tab" aria-controls="home" aria-selected="true" href="/home" className="o-links nav-link active">Inicio</a>
+        , <a  className="o-links nav-link active" href="/sell">Ventas</a>
+        , <a className="o-links nav-link active" href="/sellers">Vendedores</a>
+        , <a className="o-links nav-link active" href="/users">Usuarios y Roles</a>
     ]
 }
+
+
 
 export default function Layout(props) {
     const { routes } = props;

@@ -3,3 +3,16 @@
     text-decoration: none;
     color: black;
 }
+
+a:hover {
+    color: red;
+  }
+
+  a:target {
+    color: red;
+    border: 1px solid red;
+ }
+ a:active {
+    color: red;
+    border: 1px solid red;
+ }
