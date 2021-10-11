@@ -1,6 +1,6 @@
 
 .o-main-container{
-    border-bottom: solid 1px;
+    border-bottom: solid 1px #C4C4C4;
 }
 
 /* Up part for navBar*/
@@ -14,6 +14,18 @@
 
     display: flex;
     align-items: center;
+}
+
+.o-input-text{
+  width: 15rem;
+  height: 1.5rem;
+  border-radius: 8px;
+  /*background-image: url(../../img/loupe.png)  ;*/
+  border-width: 0.5px;
+  
+}
+.o-searchh{
+  margin-bottom: 2px;
 }
 
 .o-img{

@@ -5,19 +5,20 @@ import useAuth from "../hooks/useAuth"
 import Test from "../screens/test/Test"
 import jwtDecode from "jwt-decode"
 import jwt from "jsonwebtoken"
+import './Layout.css';
 
 import Navbar from "../components/navbar/navbar"
 
 let tabSelector = {
     "user": [
-        <a href="/home">Inicio</a>
-        , <a href="/sell">Ventas</a>
+        <a className=".o-links" href="/home">Inicio</a>
+        , <a className=".o-links" href="/sell">Ventas</a>
     ],
     "publisher": [
-        <a href="/home">Inicio</a>
-        , <a href="/sell">Ventas</a>
-        , <a href="/sellers">Vendedores</a>
-        , <a href="/users">Usuarios y Roles</a>
+        <a  href="/home" className=".o-links">Inicio</a>
+        , <a  className=".o-links" href="/sell">Ventas</a>
+        , <a className=".o-links" href="/sellers">Vendedores</a>
+        , <a className=".o-links" href="/users">Usuarios y Roles</a>
     ]
 }
 

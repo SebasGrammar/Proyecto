@@ -1,8 +1,9 @@
 import React from 'react';
 import './navbar.css';
-import notifications from '../../img/delete.png';
+import notifications from '../../img/bell.png';
 import user from '../../img/deadpool-icon.png';
-import logout from '../../img/pencil.png';
+import logout from '../../img/logout.png';
+import search from '../../img/loupe.png';
 
 // class Navbar extends React.Component {
 //     render() {
@@ -60,14 +61,14 @@ export default function navbar({ role, tabs }) {
             <section className="o-up-navbar">
 
                 <section>
-                    <h3>x-force team</h3>
+                    <h3>X-force team</h3>
                 </section>
 
 
                 <section>
                     <form action="">
-                        <input type="text" id="username" name="username " placeholder="Buscar.." />
-                        <img className="o-img" src={logout} alt="Log out" />
+                        <input className="o-input-text" type="text" id="username" name="username " placeholder="Buscar.." />
+                        <img className="o-img o-searchh" src={search} alt="Log out" />
                     </form>
 
                 </section>
