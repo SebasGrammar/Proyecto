@@ -1,25 +1,56 @@
+@import "../../colors.css";
+
 .o-container-description{
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid red;
 }
 
 .o-btn-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background:var(--colorTerciario)
 }
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;     
+    color: var(--colorFont1);
+    text-align: left;
+    margin: auto;
+    width: 98%;
+    padding: 10px 200px 10px 10px;    
+    border: 1px solid black;    
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;     
+    color: var(--colorFont2);
+    text-align: left;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid black;
+    width: 98%;
+    padding: 10px 50px 10px 10px;
+    text-align: justify;
+}
+
 .o-button-add{
 
-    background-color: red;
-    color: white;
+    background-color: var(--colorRojo);
+    color: var(--colorPrimario);
+    font-weight: bold;
+    font-size: large;
     border: none;
-    border-radius: 1rem;
-    width: 2rem;
-    height: 2rem;
+    border-radius: 2rem;
+    width: 60px;
+    height: 50px;
 }
-o-textoo{
-
+.o-textoo{
+    color: var(--colorRojo);
     margin: 0 0 0 0;
     margin-right: 5px;
 }
