@@ -4,53 +4,57 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid red;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--colorSecundario); 
+    padding-left: 20px;
+    padding-right: 15px;
+    background: var(--colorPrimario);
 }
 
 .o-btn-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background:var(--colorTerciario)
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;     
+    font-size: 2.15rem;   
     color: var(--colorFont1);
     text-align: left;
+    padding: 20px 10px 15px 10px;
     margin: auto;
     width: 98%;
-    padding: 10px 200px 10px 10px;    
-    border: 1px solid black;    
+    padding-right: 4.5rem;
+    text-align: justify;
+    text-justify: inter-word;  
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;     
+    font-size: 1.05rem;     
     color: var(--colorFont2);
     text-align: left;
-    padding: 10px;
+    padding: 0px 10px 20px 10px;
     margin: auto;
-    border: 1px solid black;
     width: 98%;
-    padding: 10px 50px 10px 10px;
+    padding-right: 4.5rem;
     text-align: justify;
+    text-justify: inter-word;
 }
 
 .o-button-add{
-
-    background-color: var(--colorRojo);
-    color: var(--colorPrimario);
-    font-weight: bold;
-    font-size: large;
     border: none;
-    border-radius: 2rem;
-    width: 60px;
-    height: 50px;
+    width: 70px;
+    height: 60px;    
 }
+
 .o-textoo{
     color: var(--colorRojo);
-    margin: 0 0 0 0;
-    margin-right: 5px;
+    text-align: right;
+    font-size: 20px;
+    padding: 10px;
+    margin: auto;
+    width: 90%;
 }

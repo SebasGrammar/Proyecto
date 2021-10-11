@@ -1,5 +1,6 @@
 import React from 'react';
 import './Description.css';
+import agregar from '../../img/agregar.png'
 
 export default function Description({ titulo, descripcion, textoBoton }) {
     return (
@@ -10,7 +11,7 @@ export default function Description({ titulo, descripcion, textoBoton }) {
             </section>
             <section className="o-btn-container">
                 <p className="o-textoo">{textoBoton}</p>
-                <button className="o-button-add">+</button>
+                <img className="o-img o-button-add" src={agregar} alt="add" />
             </section>
         </section>
     )

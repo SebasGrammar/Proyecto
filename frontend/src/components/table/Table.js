@@ -17,7 +17,7 @@ export default function Table({title, headers, data}) {
     }
 
     return (
-        <>
+        <section className="contenedorTabla">
             <h1>{title}</h1>
             <table>
                 <thead className="head">
@@ -39,7 +39,7 @@ export default function Table({title, headers, data}) {
                     }
                 </tbody>
             </table>
-        </>
+        </section>
 
     )
 }
