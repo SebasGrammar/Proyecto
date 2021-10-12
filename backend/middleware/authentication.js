@@ -37,6 +37,8 @@ const User = require("../models/User")
 // Protect routes
 exports.protect = asyncHandler(async (req, res, next) => {
     let token;
+
+
     // if (req.headers.authorization && req.headers.authorization.startsWith("Bearer")) { // check the authorization header 
     //     token = req.headers.authorization.split(" ")[1]; //token, without the Bearer bit.   
     // }
@@ -87,7 +89,7 @@ exports.protect = asyncHandler(async (req, res, next) => {
 // Grant access to specific roles
 exports.authorize = (...roles) => {
     return (req, res, next) => {
-        if (!roles.includes(req.user.role)) {
+        if (!roles.includes(req.user.role)) { // req.user is set above, in the protect middleware.
             return next(`User role ${req.user.role} is not authorized to perform this action`)
         }
         next()
