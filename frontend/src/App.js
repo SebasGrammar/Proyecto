@@ -32,6 +32,8 @@ function App() {
         {/* the route above shouldn't be enabled... it's supposed to be rendered from Test.js . FCK */}
         {/* <Route path="/" component={Navbar} exact /> */}
         <Route path="/users" component={Usuarios} />
+        <Route path="/sellers" component={Vendedores} />
+
       </Router>
     </AuthProvider>
   );
