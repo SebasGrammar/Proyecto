@@ -64,7 +64,6 @@ export default function navbar({ role, tabs }) {
                     <h3>X-force team</h3>
                 </section>
 
-
                 <section>
                     <form action="">
                         <input className="o-input-text" type="text" id="username" name="username " placeholder="Buscar.." />
@@ -86,7 +85,6 @@ export default function navbar({ role, tabs }) {
                 <nav className="navbar navbar-light bg-light justify-content-around nav-link active">
                     {tabs}
                 </nav>
-
             </section>
 
 

@@ -100,8 +100,8 @@ export default function LoginForm() {
 
                 <input className="entryText"
                     // prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
-                    type="text"
-                    name="username "
+                    type="mail"
+                    name="mail"
                     placeholder="Usuario"
                     className="login-form__input"
                 /> <br></br>
