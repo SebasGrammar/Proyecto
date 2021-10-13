@@ -17,7 +17,7 @@ let tabSelector = {
         , <a className="o-links " href="/sell">Ventas</a>
     ],
     "publisher": [
-        <a role="tab" aria-controls="home" aria-selected="true" href="/home" className="o-links nav-link active">Inicio</a>
+        <a href="/home" className="o-links nav-link active">Inicio</a>
         , <a className="o-links nav-link active" href="/sell">Ventas</a>
         , <a className="o-links nav-link active" href="/sellers">Vendedores</a>
         , <a className="o-links nav-link active" href="/users">Usuarios y Roles</a>
