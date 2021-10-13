@@ -9,7 +9,7 @@ import './Layout.css';
 
 import Navbar from "../components/navbar/navbar"
 
-import Users from "../screens/edit test/Users"
+import Users from "../screens/edit_test/Users"
 
 let tabSelector = {
     "user": [
