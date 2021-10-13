@@ -31,12 +31,12 @@ export default function Edit({ match }){
     return (
         <div>
             <form className="login-form" onChange={changeForm} onSubmit={edit} >
-                <h1>LOL</h1>
+                
                 <input
                 // prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
-                type ="name"
-                name="name"
-                placeholder="nombre"
+                type ="text"
+                name="usarname"
+                placeholder="username"
                 />
 
                 <button type ="submit">submit</button>

@@ -11,25 +11,30 @@
 
 .main { 
     background-color: var(--colorPrimario);
-    padding: 20px;
-    margin: 5em; 
-    /*width: 579px;
-    height: 757px;*/
-    border: solid 2px;
-    border-color: var(--colorSecundario);
+    margin: 20px;
+    border: solid 2px var(--colorSecundario);
     border-radius: 28px;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+}
+
+.main>section, form{
+    width: 600px;
+    margin: 10px;
+    text-align: center;
 }
 
 .iniciar{    
-    padding: 0px;
-    margin: 0px;    
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;    
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem; 
     padding: 1px;
-    margin: 0px;
     color: var(--colorFont1);
     text-align: center;
 }
@@ -47,7 +52,8 @@ p {
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 0.625rem;
-    padding: 0.45rem; 
+    padding: 10px;
+    margin: 10px;
 }
 
 .l-img{
@@ -60,11 +66,11 @@ p {
     background-color: var(--colorRojo);
     border: none;
     color:  var(--colorPrimario);
-    padding: 5px 12px;
+    padding: 8px 18px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.625rem;
+    font-size: 0.825rem;
     border-radius: 5px;
     position: absolute;
 }
