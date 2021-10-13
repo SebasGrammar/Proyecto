@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios"
-import '../login/login.css';
-import deadpool from '../../img/deadpool-icon.png'
+
 
 const basePath = "http://localhost:3000/api"
 const apiVersion = "v1"
@@ -88,38 +87,29 @@ export default function LoginForm() {
     };
 
     return (
-        <section className="main">
-            <section className="iniciar">
+        <form className="login-form" onChange={changeForm} onSubmit={login} >
+            <h1>LOL</h1>
 
-                <img className="l-img" src={deadpool} alt="Deadpool Team Icon" />
+            <input
+                // prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
+                type="email"
+                name="email"
+                placeholder="Correo electronico"
+                className="login-form__input"
+            />
 
-                <h1>Iniciar sesión</h1>
-                <p>Ingresa a tu cuenta de X - Force Team</p>
+            <input
+                // prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
+                type="password"
+                name="password"
+                placeholder="Contraseña"
+                className="login-form__input"
+            />
 
-                <form className="login-form" onChange={changeForm} onSubmit={login} >
+            <button type="submit" className="login-form__button">
+                Entrar
+            </button>
 
-                <input className="entryText"
-                    // prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
-                    type="mail"
-                    name="mail"
-                    placeholder="Usuario"
-                    className="login-form__input"
-                /> <br></br>
-
-                <input className="entryText"
-                    // prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
-                    type="password"
-                    name="password"
-                    placeholder="Contraseña"
-                    className="login-form__input"
-                /> <br></br>
-
-                    <button type="submit" className="login-form__button botonPrincipal">
-                    Iniciar sesión
-                </button>
-
-                </form>
-            </section>
-        </section>
+        </form>
     );
 }
