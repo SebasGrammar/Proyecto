@@ -50,13 +50,6 @@
   }
 
   .o-button:target{
-
     background-color: white; /* Green */
     color: #D93025;
   }
-
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
