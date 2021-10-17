@@ -1,4 +1,7 @@
-import "./table.css"
+import './table.css';
+import basura from '../../img/delete.png';
+import lapiz from '../../img/pencil.png';
+import quitar from '../../img/quitar.png';
 
 export default function Table({headers, data}) {
     
@@ -19,11 +22,21 @@ export default function Table({headers, data}) {
     return (
         <section className="contenedorSection">
             <section>
-                <p>Quitar selección</p>
-                <p>Editar usuario</p>
+                <section className="quitar ord">
+                    <img className="l-img" src={quitar} alt="editar" />
+                    <p className="opcionTabla">Quitar selección</p>
+                </section>
+                <section className="editar ord">
+                    <img className="l-img" src={lapiz} alt="editar" />
+                    <p className="opcionTabla">Editar usuario</p>
+                </section>
+                <section className="eliminar ord">
+                    <img className="l-img" src={basura} alt="eliminar" />
+                    <p className="opcionTabla">Eliminar usuario</p>
+                </section>
             </section>
             <section className="contenedorTabla">
-                <table>
+                <table className="col-12">
                     <thead className="head">
                         <tr>
                             {
