@@ -29,7 +29,7 @@ export default function Vendedores() {
 
     }, [])
 
-    let [titulo, cuerpo, textoBoton] = Object.values(descripcion[0])
+    let [titulo, cuerpo, textoBoton] = Object.values(descripcion[1])
     let headers = Object.keys(tablaVendedores[1])
     let data = Object.values(tablaVendedores)
     if (users) {

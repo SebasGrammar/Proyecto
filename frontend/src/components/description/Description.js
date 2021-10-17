@@ -23,6 +23,7 @@ export default function Description({ titulo, descripcion, textoBoton, id }) {
             </section>
             
             <Modal
+                onClose={()=> setShow(false)}
                 pageTitle={pageTitle}
                 title={title}
                 labels={labels}

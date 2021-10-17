@@ -16,7 +16,7 @@
     width: 50%;
     height: 60%;
     /*overflow: hidden;*/     
-    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    background:white;
     transition: tranform 2s;
     transform: translateY(0%);
 }

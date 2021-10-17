@@ -1,6 +1,6 @@
 import "./Modal.css"
 
-export default function Modal({ pageTitle, title, labels, tipo, buttonAdd,show }) {
+export default function Modal({ pageTitle, title, labels, tipo, buttonAdd,show,onClose }) {
 
 
   /*  let cerrar = document.querySelectorAll(".close")[0];
@@ -32,8 +32,8 @@ export default function Modal({ pageTitle, title, labels, tipo, buttonAdd,show }
             }
 
     return (
-        <section className="o-global-container d-flex align-items-center justify-content-center p-5">
-            <section className="o-modal-container rounded w-50 mw-51 p-2 modal-close">
+        <section className="o-global-container d-flex align-items-center justify-content-center p-5" onClick={onClose}>
+            <section className="o-modal-container rounded w-50 mw-51 p-2 modal-close" onClick={e =>e.stopPropagation()}>
 
                 <section className="up-modal-container">
                     <p className="p-0">{pageTitle}</p>
@@ -63,7 +63,7 @@ export default function Modal({ pageTitle, title, labels, tipo, buttonAdd,show }
 
                 <section className="bottom-modal-container d-flex justify-content-around ">
 
-                    <button className="botonSecundarioo">Cancelar</button>
+                    <button className="botonSecundarioo" onClick={onClose}>Cancelar</button>
                     <button className="botonPrincipall">{buttonAdd}</button>
 
                 </section>
