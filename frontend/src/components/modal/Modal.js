@@ -1,12 +1,35 @@
 import "./Modal.css"
 
-export default function Table({ pageTitle, title, labels,tipo,buttonAdd}) {
+export default function Modal({ pageTitle, title, labels, tipo, buttonAdd }) {
 
 
+  /*  let cerrar = document.querySelectorAll(".close")[0];
+    let abrir = document.querySelectorAll(".cta")[0];
+    let modal = document.querySelectorAll(".o-modal-container")[0];
+    let modalC = document.querySelectorAll(".o-global-container")[0];
+
+         abrir.addEventListener("click",function(e){
+
+                e.preventDefault();
+                modalC.style.opacity ="1";
+                modalC.style.visibility="visible";
+                modal.classList.toggle("modal-close");
+
+            });
+
+            cerrar.addEventListener("click",function(e){
+
+                e.preventDefault();
+                modal.classList.toggle("modal-close")
+                modalC.style.opacity ="1";
+                modalC.style.visibility="hidden";
+                
+
+            });*/
 
     return (
-        <section className="o-global-container d-flex justify-content-center p-5">
-            <section className="o-modal-container rounded w-50 mw-51 p-2">
+        <section className="o-global-container d-flex align-items-center justify-content-center p-5">
+            <section className="o-modal-container rounded w-50 mw-51 p-2 modal-close">
 
                 <section className="up-modal-container">
                     <p className="p-0">{pageTitle}</p>
@@ -20,18 +43,18 @@ export default function Table({ pageTitle, title, labels,tipo,buttonAdd}) {
                             labels.map(label => {
                                 return (
                                     <div className="d-flex justify-content-around">
-                                     <div>  
-                                    <p className="p-0">{label}</p>
-                                    </div>
-                                    <div classname="p-0">  
-                                    <input className="entryText" type={tipo} id="username" name="username " placeholder="" />
-                                    </div>
+                                        <div>
+                                            <p className="p-0">{label}</p>
+                                        </div>
+                                        <div classname="p-0">
+                                            <input className="entryText" type={tipo} id="username" name="username " placeholder="" />
+                                        </div>
                                     </div>
                                 )
                             })
                         }
                     </section>
-                    
+
                 </section>
 
                 <section className="bottom-modal-container d-flex justify-content-around ">
@@ -47,4 +70,5 @@ export default function Table({ pageTitle, title, labels,tipo,buttonAdd}) {
         </section>
 
     )
+   
 }

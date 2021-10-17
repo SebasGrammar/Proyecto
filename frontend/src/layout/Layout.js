@@ -64,8 +64,8 @@ export default function Layout(props) {
                 {/* <h1>{loggedInUser.name || "not found"}</h1> */}
                 {/* control +k+c comenta
                 control +k +u descomenta */}
-                <h1>hi</h1>
-                <Users />
+                {/* <h1>hi</h1> */}
+                {/* <Users /> */}
 
             </div>
         );
