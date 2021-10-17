@@ -1,6 +1,6 @@
 import "./Modal.css"
 
-export default function Modal({ pageTitle, title, labels, tipo, buttonAdd }) {
+export default function Modal({ pageTitle, title, labels, tipo, buttonAdd,show }) {
 
 
   /*  let cerrar = document.querySelectorAll(".close")[0];
@@ -26,6 +26,10 @@ export default function Modal({ pageTitle, title, labels, tipo, buttonAdd }) {
                 
 
             });*/
+
+            if(!show){
+                return null;
+            }
 
     return (
         <section className="o-global-container d-flex align-items-center justify-content-center p-5">

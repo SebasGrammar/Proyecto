@@ -1,9 +1,12 @@
 import Modal from '../../components/modal/Modal';
 import Description from '../../components/description/Description';
+import React,{useState} from 'react';
+import Show from '../../components/description/Description'
 
 export default function Inicio() {
 
-   
+    let [show,setShow] = useState(false)
+
         return (
        
             <div className="contenedor">
@@ -17,13 +20,14 @@ export default function Inicio() {
                     textoBoton="Agregar vendedor"
                 />
 
-                {/* <Modal
+                { <Modal
                     pageTitle="Gestión de Vendedores"
                     title= "Agregar Vendedor"
                     labels={["ID Vendedor","Nombre","Especialidad"]}
                     tipo={["number","text","text"]}
                     buttonAdd="Agregar vendedor"
-                /> */}
+                    show={Show}
+                /> }
                 
             </div>
         )

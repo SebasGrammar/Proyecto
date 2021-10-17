@@ -1,9 +1,13 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Description.css';
 import agregar from '../../img/agregar.png'
+import Modal from '../modal/Modal';
+
 
 export default function Description({ titulo, descripcion, textoBoton }) {
     
+
+     let [show,setShow] = useState(false)
    
     return (
         
@@ -14,12 +18,13 @@ export default function Description({ titulo, descripcion, textoBoton }) {
             </section>
             <section className="o-btn-container">
                 <p className="o-textoo cta">{textoBoton}</p>
-                <button className="o-button-add">+</button>
+                <button className="o-button-add" onClick={()=>setShow(true)}>+</button>
             </section>
         </section>
     )
     
     
 }
+export let show;
 
 
