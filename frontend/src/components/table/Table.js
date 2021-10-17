@@ -10,35 +10,40 @@ export default function Table({headers, data}) {
         }
 
         return (
-            <tr>
+            <tr className="dataFila">
                 {columns}
             </tr>
         )
     }
 
     return (
-        <section className="contenedorTabla">
-            <table>
-                <thead className="head">
-                    <tr>
+        <section className="contenedorSection">
+            <section>
+                <p>Quitar selección</p>
+                <p>Editar usuario</p>
+            </section>
+            <section className="contenedorTabla">
+                <table>
+                    <thead className="head">
+                        <tr>
+                            {
+                                headers.map(header => {
+                                    return (
+                                        <th>{header}</th>
+                                    )
+                                })
+                            }
+                        </tr>
+                    </thead>
+                    <tbody className="body">
                         {
-                            headers.map(header => {
-                                return (
-                                    <th>{header}</th>
-                                )
+                            data.map(row => {
+                                return createRow(row)
                             })
                         }
-                    </tr>
-                </thead>
-                <tbody className="body">
-                    {
-                        data.map(row => {
-                            return createRow(row)
-                        })
-                    }
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </section>
         </section>
-
     )
 }
