@@ -3,6 +3,8 @@ import axios from "axios";
 import Table from '../../components/table/Table';
 import Description from '../../components/description/Description';
 import './Usuario.css';
+import descripcion from '../../datasource/descripcion.json'
+import tablaUsuarios from '../../datasource/tablaUsuarios.json'
 
 export default function Usuarios() {
 
@@ -31,6 +33,9 @@ export default function Usuarios() {
 
     }, [])
 
+    let [titulo, cuerpo, textoBoton] = Object.values(descripcion[2])
+    let headers = Object.keys(tablaUsuarios[0])
+    let data = Object.values(tablaUsuarios)
     if (users) {
         console.log(users)
         return (
@@ -43,15 +48,13 @@ export default function Usuarios() {
             // <h1>Loaded already. </h1>
             <div className="contenedor">
                 <Description
-                    titulo="Gestión de Usuarios y Roles"
-                    descripcion={`En la Gestión de Usuarios y Roles permite administrar los roles en el sistema (vendedor, administrador, ejecutivo, operario, director, gerente comercial) y restringir/otorgar los accesos al sistema.
-                    
-                    Adicionalmente se consultar todos los usuarios de X-Force Team, asi como modificar sus datos o eliminarlos.`} 
-                    textoBoton="Agregar usuario"
+                    titulo={titulo}
+                    descripcion={cuerpo} 
+                    textoBoton={textoBoton}
                 />
-                <Table title=""
-                    headers={["ID Usuario"]}
-                    data={["1250"]}/>
+                <Table 
+                    headers={headers}
+                    data={data}/>
             </div>
         )
     } else {

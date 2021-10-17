@@ -7,17 +7,22 @@
     margin: 20px;
     border-radius: 10px;
     border: 1px solid var(--colorSecundario); 
-    padding-left: 20px;
-    padding-right: 15px;
+    padding: 20px;
+    display: flex;
 }
 
 .head {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.05rem;     
+    font-size: 1rem;     
     color: var(--colorFont2);
     text-align: center;
+    font-weight: bold;
+    border-bottom: 0.5px solid var(--colorTerciario);
 }
 
 .body {
-    background: lightcoral
+    font-family: 'Roboto', sans-serif;
+    color: var(--colorFont1);
+    font-size: 1.05rem;
+    background: var(--colorPrimario);
 }

@@ -1,17 +1,4 @@
 .o-links{
     text-decoration:none;
-    background: red;
     color: #3C4042;
-}
-
-a:hover {    
-    font-weight: bold;
-  }
-
-a:active {
-    color: #D93025;
-}
-
-a:focus{
-  color: #D93025;
 }

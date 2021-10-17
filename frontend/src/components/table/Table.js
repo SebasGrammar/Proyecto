@@ -1,6 +1,6 @@
 import "./table.css"
 
-export default function Table({title, headers, data}) {
+export default function Table({headers, data}) {
     
     const createRow = (object) => {
         const columns = []
@@ -18,7 +18,6 @@ export default function Table({title, headers, data}) {
 
     return (
         <section className="contenedorTabla">
-            <h1>{title}</h1>
             <table>
                 <thead className="head">
                     <tr>
