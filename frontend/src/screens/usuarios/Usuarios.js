@@ -52,7 +52,8 @@ export default function Usuarios() {
                     descripcion={cuerpo} 
                     textoBoton={textoBoton}
                 />
-                <Table 
+                <Table
+                    tipo = "usuario"
                     headers={headers}
                     data={data}/>
             </div>
