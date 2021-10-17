@@ -11,6 +11,7 @@ import AuthProvider from './providers/AuthProvider';
 import Usuarios from './screens/usuarios/Usuarios';
 import Vendedores from './screens/vendedores/Vendedores';
 import Ventas from './screens/ventas/Ventas';
+import Inicio from './screens/inicio/Inicio';
 
 
 // The token's being set from LoginForm.
@@ -34,6 +35,7 @@ function App() {
         <Route path="/sell" component={Ventas} />
         <Route path="/users" component={Usuarios} />
         <Route path="/sellers" component={Vendedores} />
+        <Route path="/home" component = {Inicio} />
 
       </Router>
     </AuthProvider>
