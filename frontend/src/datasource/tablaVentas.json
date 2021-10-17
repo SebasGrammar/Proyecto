@@ -1,0 +1,122 @@
+[
+	{
+		"ID venta": 5,
+		"Descripción": "gravida non, sollicitudin a, malesuada id, erat. Etiam vestibulum massa",
+		"Valor total": 7,
+		"Fecha inicial": "Apr 16, 2022",
+		"ID vendedor": 8,
+		"list": "EMBALAJE"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "vitae risus. Duis a mi fringilla mi lacinia mattis. Integer",
+		"Valor total": 3,
+		"Fecha inicial": "Feb 28, 2021",
+		"ID vendedor": 9,
+		"list": "DESPACHO"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique pellentesque,",
+		"Valor total": 6,
+		"Fecha inicial": "Apr 27, 2021",
+		"ID vendedor": 2,
+		"list": "DESPACHO"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "auctor non, feugiat nec, diam. Duis mi enim, condimentum eget,",
+		"Valor total": 2,
+		"Fecha inicial": "Feb 19, 2021",
+		"ID vendedor": 8,
+		"list": "CREADA"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "fermentum risus, at fringilla purus mauris a nunc. In at",
+		"Valor total": 2,
+		"Fecha inicial": "Dec 10, 2020",
+		"ID vendedor": 8,
+		"list": "EMBALAJE"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "ut, molestie in, tempus eu, ligula. Aenean euismod mauris eu",
+		"Valor total": 7,
+		"Fecha inicial": "Apr 24, 2021",
+		"ID vendedor": 6,
+		"list": "DESPACHO"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "semper. Nam tempor diam dictum sapien. Aenean massa. Integer vitae",
+		"Valor total": 10,
+		"Fecha inicial": "Sep 9, 2022",
+		"ID vendedor": 4,
+		"list": "DESPACHO"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "malesuada malesuada. Integer id magna et ipsum cursus vestibulum. Mauris",
+		"Valor total": 3,
+		"Fecha inicial": "Sep 19, 2021",
+		"ID vendedor": 2,
+		"list": "DESPACHO"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "Aliquam fringilla cursus purus. Nullam scelerisque neque sed sem egestas",
+		"Valor total": 10,
+		"Fecha inicial": "Aug 11, 2022",
+		"ID vendedor": 9,
+		"list": "EMBALAJE"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "justo nec ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate,",
+		"Valor total": 5,
+		"Fecha inicial": "Jun 23, 2021",
+		"ID vendedor": 8,
+		"list": "EN RUTA"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus.",
+		"Valor total": 6,
+		"Fecha inicial": "Nov 28, 2021",
+		"ID vendedor": 4,
+		"list": "EMBALAJE"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "Duis dignissim tempor arcu. Vestibulum ut eros non enim commodo",
+		"Valor total": 1,
+		"Fecha inicial": "Mar 24, 2021",
+		"ID vendedor": 8,
+		"list": "CREADA"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "mauris ipsum porta elit, a feugiat tellus lorem eu metus.",
+		"Valor total": 6,
+		"Fecha inicial": "Feb 24, 2022",
+		"ID vendedor": 7,
+		"list": "CREADA"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "blandit mattis. Cras eget nisi dictum augue malesuada malesuada. Integer",
+		"Valor total": 4,
+		"Fecha inicial": "Feb 26, 2021",
+		"ID vendedor": 7,
+		"list": "EMBALAJE"
+	},
+	{
+		"ID venta": 5,
+		"Descripción": "rhoncus. Donec est. Nunc ullamcorper, velit in aliquet lobortis, nisi",
+		"Valor total": 10,
+		"Fecha inicial": "Jul 25, 2022",
+		"ID vendedor": 6,
+		"list": "CREADA"
+	}
+]

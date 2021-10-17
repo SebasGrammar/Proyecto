@@ -4,13 +4,13 @@ import Table from '../../components/table/Table';
 import Description from '../../components/description/Description';
 import './ventas.css';
 import descripcion from '../../datasource/descripcion.json'
-import tablaUsuarios from '../../datasource/tablaUsuarios.json'
+import tablaVentas from '../../datasource/tablaUsuarios.json'
 
 export default function Ventas() {
 
     let [titulo, cuerpo, textoBoton] = Object.values(descripcion[0])
-    let headers = Object.keys(tablaUsuarios[0])
-    let data = Object.values(tablaUsuarios)
+    let headers = Object.keys(tablaVentas[0])
+    let data = Object.values(tablaVentas)
     return (
             //   <div>
             //   {users.map(user => (

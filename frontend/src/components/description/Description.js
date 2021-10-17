@@ -25,6 +25,6 @@ export default function Description({ titulo, descripcion, textoBoton }) {
     
     
 }
-export let show;
+
 
 
