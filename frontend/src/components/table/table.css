@@ -1,23 +1,40 @@
 @import "../../colors.css";
 
-.contenedorTabla{
-    background: var(--colorPrimario);
-
-    justify-content: space-evenly;
+.contenedorSection{
+    background: var(--colorPrimario);    
     margin: 20px;
     border-radius: 10px;
     border: 1px solid var(--colorSecundario); 
-    padding-left: 20px;
-    padding-right: 15px;
+}
+.contenedorTabla{
+    justify-content: space-evenly;
+    padding: 20px;
+    display: flex;
 }
 
 .head {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.05rem;     
+    font-size: 1rem;     
     color: var(--colorFont2);
-    text-align: center;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid var(--colorTerciario);
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .body {
-    background: lightcoral
+    font-family: 'Roboto', sans-serif;
+    color: var(--colorFont1);
+    font-size: 1.05rem;
+    background: var(--colorPrimario);
+    justify-content: space-evenly;
+}
+
+td, th{
+    padding: 5px;
+}
+
+.dataFila:hover{
+    background-color: var(--colorSecundario);
 }

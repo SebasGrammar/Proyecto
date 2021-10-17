@@ -1,17 +1,8 @@
 .o-links{
     text-decoration:none;
+<<<<<<< HEAD
    
+=======
+>>>>>>> 13675585a6c97d0e3af48a2052a8e613593b2a56
     color: #3C4042;
-}
-
-a:hover {    
-    font-weight: bold;
-  }
-
-a:active {
-    color: #D93025;
-}
-
-a:focus{
-  color: #D93025;
 }

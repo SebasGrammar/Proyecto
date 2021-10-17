@@ -43,10 +43,7 @@
     transition-duration: 0.4s;
   }
   
-  .o-button:hover {
-    background-color: white; /* Green */
-    color: #D93025;
-  }
+  
 
   .o-button:target{
     background-color: white; /* Green */
@@ -54,6 +51,6 @@
   }
 
   .o-navbar:hover {
-    padding: 0px;
+    color: #D93025;
   }
 

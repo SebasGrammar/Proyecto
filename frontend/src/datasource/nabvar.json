@@ -1,0 +1,44 @@
+[
+    {
+        "rol":"admin",
+        "pestañas": [
+            "inicio",
+            "ventas",
+            "vendedores",
+            "usuarios"
+        ],
+        "route":[
+            "/inicio",
+            "/ventas",
+            "/vendedores",
+            "/usuarios"
+        ]
+    },
+    {
+        "rol": "vendedores", 
+        "pestañas":[
+            "inicio",
+            "ventas"
+        ]
+    },
+    {
+        "rol":"ejecutivo",
+        "pestañas": [
+            "inicio"
+        ]
+    },
+    {
+        "rol":"gerente comercial",
+        "pestañas": [
+            "inicio",
+            "ventas",
+            "vendedores"
+        ]
+    },
+    {
+        "rol":"operario",
+        "pestañas": [
+            "ventas"
+        ]
+    }
+]
