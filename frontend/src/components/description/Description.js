@@ -2,13 +2,13 @@ import React,{useState} from 'react';
 import './Description.css';
 import agregar from '../../img/agregar.png'
 import Modal from '../modal/Modal';
+import modal from '../../datasource/modal.json'
 
 
-export default function Description({ titulo, descripcion, textoBoton }) {
-    
+export default function Description({ titulo, descripcion, textoBoton, id }) {
+    const [show, setShow] = useState(false)
+    let [pageTitle, title, labels, tipo, buttonAdd] = Object.values(modal[id])
 
-     let [show,setShow] = useState(false)
-   
     return (
         
         <section className="o-container-description">
@@ -18,13 +18,19 @@ export default function Description({ titulo, descripcion, textoBoton }) {
             </section>
             <section className="o-btn-container">
                 <p className="o-textoo cta">{textoBoton}</p>
-                <button className="o-button-add" onClick={()=>setShow(true)}>+</button>
+                <button className="o-button-add" onClick={() => setShow(true)                    
+                }>+</button>
             </section>
+            
+            <Modal
+                pageTitle={pageTitle}
+                title={title}
+                labels={labels}
+                tipo={tipo}
+                buttonAdd={buttonAdd}
+                show={show} />
         </section>
-    )
-    
-    
+    )    
 }
-export let show;
 
 

@@ -1,0 +1,142 @@
+[
+	{
+		"id_vendedor": 405,
+		"nombre": "Hayfa Contreras",
+		"especialidad": "equipos gamer",
+		"celular": "1-210-280-6204",
+		"fecha_ingreso": "17:44:2021"
+	},
+	{
+		"id_vendedor": 848,
+		"nombre": "Wesley Weaver",
+		"especialidad": "equipos gamer",
+		"celular": "(724) 332-2970",
+		"fecha_ingreso": "17:07:2021"
+	},
+	{
+		"id_vendedor": 707,
+		"nombre": "Mechelle O'neill",
+		"especialidad": "tarjeta de video",
+		"celular": "1-118-522-1803",
+		"fecha_ingreso": "17:31:2021"
+	},
+	{
+		"id_vendedor": 675,
+		"nombre": "Nissim Collins",
+		"especialidad": "tarjeta de video",
+		"celular": "1-319-833-4779",
+		"fecha_ingreso": "17:05:2021"
+	},
+	{
+		"id_vendedor": 757,
+		"nombre": "Ifeoma West",
+		"especialidad": "motherboard",
+		"celular": "1-212-740-7280",
+		"fecha_ingreso": "17:06:2021"
+	},
+	{
+		"id_vendedor": 530,
+		"nombre": "Aurora Cox",
+		"especialidad": "motherboard",
+		"celular": "(840) 214-1240",
+		"fecha_ingreso": "17:21:2021"
+	},
+	{
+		"id_vendedor": 393,
+		"nombre": "Hedwig Huber",
+		"especialidad": "equipos gamer",
+		"celular": "(248) 804-6743",
+		"fecha_ingreso": "17:00:2021"
+	},
+	{
+		"id_vendedor": 443,
+		"nombre": "Forrest Stevens",
+		"especialidad": "equipos gamer",
+		"celular": "(357) 656-2083",
+		"fecha_ingreso": "17:13:2021"
+	},
+	{
+		"id_vendedor": 148,
+		"nombre": "Lana Barnes",
+		"especialidad": "tarjeta de video",
+		"celular": "(546) 128-7750",
+		"fecha_ingreso": "17:15:2021"
+	},
+	{
+		"id_vendedor": 655,
+		"nombre": "Alfreda Baird",
+		"especialidad": "tarjeta de video",
+		"celular": "1-615-848-3662",
+		"fecha_ingreso": "17:23:2021"
+	},
+	{
+		"id_vendedor": 502,
+		"nombre": "Alexa Melendez",
+		"especialidad": "motherboard",
+		"celular": "(433) 324-7443",
+		"fecha_ingreso": "17:47:2021"
+	},
+	{
+		"id_vendedor": 761,
+		"nombre": "Aidan Velazquez",
+		"especialidad": "motherboard",
+		"celular": "1-447-810-8623",
+		"fecha_ingreso": "17:48:2021"
+	},
+	{
+		"id_vendedor": 625,
+		"nombre": "Herrod Orr",
+		"especialidad": "equipos gamer",
+		"celular": "(372) 321-5153",
+		"fecha_ingreso": "17:53:2021"
+	},
+	{
+		"id_vendedor": 441,
+		"nombre": "Gannon Reynolds",
+		"especialidad": "equipos gamer",
+		"celular": "1-276-279-2352",
+		"fecha_ingreso": "17:17:2021"
+	},
+	{
+		"id_vendedor": 749,
+		"nombre": "Gabriel Bailey",
+		"especialidad": "tarjeta de video",
+		"celular": "1-406-675-2527",
+		"fecha_ingreso": "17:45:2021"
+	},
+	{
+		"id_vendedor": 252,
+		"nombre": "Ian Brock",
+		"especialidad": "tarjeta de video",
+		"celular": "1-442-162-7716",
+		"fecha_ingreso": "17:36:2021"
+	},
+	{
+		"id_vendedor": 728,
+		"nombre": "Simone Mendoza",
+		"especialidad": "motherboard",
+		"celular": "1-766-749-6541",
+		"fecha_ingreso": "17:29:2021"
+	},
+	{
+		"id_vendedor": 532,
+		"nombre": "Carolyn Bradshaw",
+		"especialidad": "motherboard",
+		"celular": "1-371-725-2943",
+		"fecha_ingreso": "17:25:2021"
+	},
+	{
+		"id_vendedor": 651,
+		"nombre": "Kelly Crawford",
+		"especialidad": "equipos gamer",
+		"celular": "(418) 364-1818",
+		"fecha_ingreso": "17:55:2021"
+	},
+	{
+		"id_vendedor": 517,
+		"nombre": "Harlan Cohen",
+		"especialidad": "equipos gamer",
+		"celular": "(618) 811-6945",
+		"fecha_ingreso": "17:10:2021"
+	}
+]

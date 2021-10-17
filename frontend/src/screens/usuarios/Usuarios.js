@@ -51,6 +51,7 @@ export default function Usuarios() {
                     titulo={titulo}
                     descripcion={cuerpo} 
                     textoBoton={textoBoton}
+                    id="2"
                 />
                 <Table
                     tipo = "usuario"

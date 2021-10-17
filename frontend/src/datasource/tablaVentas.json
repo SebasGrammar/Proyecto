@@ -1,0 +1,162 @@
+[
+	{
+		"id_venta": 1,
+		"descripcion": "neque non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fringilla cursus purus. Nullam scelerisque neque sed sem egestas blandit. Nam nulla magna,",
+		"valor_total_venta": 5578170,
+		"fecha_inicial": "17:08:2021",
+		"fecha_pago": "17:31:2021",
+		"id_vendedor": 850
+	},
+	{
+		"id_venta": 2,
+		"descripcion": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce aliquet magna a neque. Nullam ut nisi a odio semper cursus. Integer mollis. Integer tincidunt aliquam",
+		"valor_total_venta": 7832076,
+		"fecha_inicial": "17:18:2021",
+		"fecha_pago": "17:43:2021",
+		"id_vendedor": 515
+	},
+	{
+		"id_venta": 3,
+		"descripcion": "lectus quis massa. Mauris vestibulum, neque sed dictum eleifend, nunc risus varius orci, in consequat enim diam vel arcu. Curabitur ut odio vel est tempor bibendum. Donec felis orci, adipiscing",
+		"valor_total_venta": 2854247,
+		"fecha_inicial": "17:34:2021",
+		"fecha_pago": "17:45:2021",
+		"id_vendedor": 892
+	},
+	{
+		"id_venta": 4,
+		"descripcion": "luctus et ultrices posuere cubilia Curae Donec tincidunt. Donec vitae erat vel pede blandit congue. In scelerisque scelerisque dui. Suspendisse ac metus vitae velit egestas lacinia. Sed congue, elit sed",
+		"valor_total_venta": 3594995,
+		"fecha_inicial": "17:33:2021",
+		"fecha_pago": "17:58:2021",
+		"id_vendedor": 312
+	},
+	{
+		"id_venta": 5,
+		"descripcion": "tellus eu augue porttitor interdum. Sed auctor odio a purus. Duis elementum, dui quis accumsan convallis, ante lectus convallis est, vitae sodales nisi magna sed dui. Fusce aliquam, enim nec",
+		"valor_total_venta": 6351868,
+		"fecha_inicial": "17:10:2021",
+		"fecha_pago": "17:28:2021",
+		"id_vendedor": 969
+	},
+	{
+		"id_venta": 6,
+		"descripcion": "consectetuer mauris id sapien. Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean",
+		"valor_total_venta": 1535937,
+		"fecha_inicial": "17:24:2021",
+		"fecha_pago": "17:50:2021",
+		"id_vendedor": 742
+	},
+	{
+		"id_venta": 7,
+		"descripcion": "Donec luctus aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis a, magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique pellentesque, tellus sem",
+		"valor_total_venta": 2263828,
+		"fecha_inicial": "17:10:2021",
+		"fecha_pago": "17:42:2021",
+		"id_vendedor": 136
+	},
+	{
+		"id_venta": 8,
+		"descripcion": "dictum eu, placerat eget, venenatis a, magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique pellentesque, tellus sem mollis dui, in sodales elit erat vitae",
+		"valor_total_venta": 9239781,
+		"fecha_inicial": "17:37:2021",
+		"fecha_pago": "17:53:2021",
+		"id_vendedor": 481
+	},
+	{
+		"id_venta": 9,
+		"descripcion": "in sodales elit erat vitae risus. Duis a mi fringilla mi lacinia mattis. Integer eu lacus. Quisque imperdiet, erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla purus mauris",
+		"valor_total_venta": 69751,
+		"fecha_inicial": "17:00:2021",
+		"fecha_pago": "17:43:2021",
+		"id_vendedor": 319
+	},
+	{
+		"id_venta": 10,
+		"descripcion": "Nulla aliquet. Proin velit. Sed malesuada augue ut lacus. Nulla tincidunt, neque vitae semper egestas, urna justo faucibus lectus, a sollicitudin orci sem eget massa. Suspendisse eleifend. Cras sed leo.",
+		"valor_total_venta": 1042413,
+		"fecha_inicial": "17:45:2021",
+		"fecha_pago": "17:05:2021",
+		"id_vendedor": 270
+	},
+	{
+		"id_venta": 11,
+		"descripcion": "consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a",
+		"valor_total_venta": 5588602,
+		"fecha_inicial": "17:14:2021",
+		"fecha_pago": "17:13:2021",
+		"id_vendedor": 448
+	},
+	{
+		"id_venta": 12,
+		"descripcion": "molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam ornare, libero at auctor ullamcorper, nisl arcu iaculis enim, sit amet ornare lectus justo eu arcu. Morbi sit amet massa. Quisque",
+		"valor_total_venta": 7412458,
+		"fecha_inicial": "17:05:2021",
+		"fecha_pago": "17:29:2021",
+		"id_vendedor": 907
+	},
+	{
+		"id_venta": 13,
+		"descripcion": "quis accumsan convallis, ante lectus convallis est, vitae sodales nisi magna sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem ipsum sodales purus, in molestie tortor nibh sit amet orci.",
+		"valor_total_venta": 8179909,
+		"fecha_inicial": "17:38:2021",
+		"fecha_pago": "17:24:2021",
+		"id_vendedor": 566
+	},
+	{
+		"id_venta": 14,
+		"descripcion": "dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed libero. Proin sed turpis nec mauris blandit mattis. Cras eget nisi dictum augue malesuada malesuada. Integer id magna et ipsum cursus",
+		"valor_total_venta": 5906271,
+		"fecha_inicial": "17:21:2021",
+		"fecha_pago": "17:41:2021",
+		"id_vendedor": 350
+	},
+	{
+		"id_venta": 15,
+		"descripcion": "placerat, orci lacus vestibulum lorem, sit amet ultricies sem magna nec quam. Curabitur vel lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec dignissim magna",
+		"valor_total_venta": 320220,
+		"fecha_inicial": "17:50:2021",
+		"fecha_pago": "17:05:2021",
+		"id_vendedor": 687
+	},
+	{
+		"id_venta": 16,
+		"descripcion": "iaculis odio. Nam interdum enim non nisi. Aenean eget metus. In nec orci. Donec nibh. Quisque nonummy ipsum non arcu. Vivamus sit amet risus. Donec egestas. Aliquam nec enim. Nunc",
+		"valor_total_venta": 4736135,
+		"fecha_inicial": "17:07:2021",
+		"fecha_pago": "17:12:2021",
+		"id_vendedor": 626
+	},
+	{
+		"id_venta": 17,
+		"descripcion": "egestas. Duis ac arcu. Nunc mauris. Morbi non sapien molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam ornare, libero at auctor ullamcorper, nisl arcu iaculis enim, sit amet ornare",
+		"valor_total_venta": 3150368,
+		"fecha_inicial": "17:36:2021",
+		"fecha_pago": "17:04:2021",
+		"id_vendedor": 290
+	},
+	{
+		"id_venta": 18,
+		"descripcion": "a, dui. Cras pellentesque. Sed dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu eros. Nam consequat dolor vitae dolor. Donec fringilla. Donec feugiat metus sit amet ante. Vivamus",
+		"valor_total_venta": 2747404,
+		"fecha_inicial": "17:54:2021",
+		"fecha_pago": "17:43:2021",
+		"id_vendedor": 588
+	},
+	{
+		"id_venta": 19,
+		"descripcion": "rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem, auctor quis, tristique ac, eleifend vitae, erat.",
+		"valor_total_venta": 9760399,
+		"fecha_inicial": "17:49:2021",
+		"fecha_pago": "17:55:2021",
+		"id_vendedor": 582
+	},
+	{
+		"id_venta": 20,
+		"descripcion": "magna. Cras convallis convallis dolor. Quisque tincidunt pede ac urna. Ut tincidunt vehicula risus. Nulla eget metus eu erat semper rutrum. Fusce dolor quam, elementum at, egestas a, scelerisque sed,",
+		"valor_total_venta": 6288536,
+		"fecha_inicial": "17:36:2021",
+		"fecha_pago": "17:17:2021",
+		"id_vendedor": 120
+	}
+]
