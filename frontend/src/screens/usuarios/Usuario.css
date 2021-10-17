@@ -2,4 +2,6 @@
 
 .contenedor{
     background-color:var(--colorSecundario);
+    margin: 0pt;
+    padding: 10px;
 }

@@ -4,7 +4,8 @@
     background: var(--colorPrimario);    
     margin: 20px;
     border-radius: 10px;
-    border: 1px solid var(--colorSecundario); 
+    border: 1px solid var(--colorSecundario);
+    padding:20px; 
 }
 .contenedorTabla{
     justify-content: space-evenly;
@@ -12,13 +13,17 @@
     display: flex;
 }
 
+td, th{
+    padding: 5px;
+    border-bottom: 1px solid var(--colorSecundario);
+}
 .head {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;     
     color: var(--colorFont2);
-    text-align: left;
+    text-align: center;
     font-weight: bold;
-    border-bottom: 1px solid var(--colorTerciario);
+    border-bottom: 2px solid var(--colorTerciario);
     padding-top: 12px;
     padding-bottom: 12px;
 }
@@ -27,14 +32,25 @@
     font-family: 'Roboto', sans-serif;
     color: var(--colorFont1);
     font-size: 1.05rem;
+    text-align: center;
     background: var(--colorPrimario);
     justify-content: space-evenly;
 }
 
-td, th{
+.dataFila:hover{
+    background-color: var(--colorSecundario);
+}
+
+.opcionTabla{
     padding: 5px;
 }
 
-.dataFila:hover{
-    background-color: var(--colorSecundario);
+.l-img{
+    height: 20px;
+    width: 20px;
+    opacity: 60%;
+}
+
+.ord{
+    display: flex;
 }
